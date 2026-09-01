@@ -1,951 +1,1730 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr" data-theme="light">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="iCell Systems - Premier Solar Energy Solutions, Rooftop Solar Installation, Commercial PV Plants, Battery Storage, and Maintenance Services." />
-    <meta name="keywords" content="Solar Energy, Solar Panels, Solar Installation, Clean Energy, Renewable Energy, iCell Systems, Inverter, Rooftop Solar" />
+    <meta
+      name="description"
+      content="iCell Systems - Premier Solar Energy Solutions, Rooftop Solar Installation, Commercial PV Plants, Battery Storage, and Maintenance Services."
+    />
+    <meta
+      name="keywords"
+      content="Solar Energy, Solar Panels, Solar Installation, Clean Energy, Renewable Energy, iCell Systems, Inverter, Rooftop Solar"
+    />
     <title>iCell Systems</title>
 
     <!-- Anti-Flash Script to Apply Theme and Language Before First Paint -->
     <script>
-        (function() {
-            try {
-                // Theme Detection
-                var savedTheme = localStorage.getItem('icell_theme');
-                var systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                var activeTheme = savedTheme ? savedTheme : (systemPrefersDark ? 'dark' : 'light');
-                document.documentElement.setAttribute('data-theme', activeTheme);
+      (function () {
+        try {
+          // Theme Detection
+          var savedTheme = localStorage.getItem("icell_theme");
+          var systemPrefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var activeTheme = savedTheme
+            ? savedTheme
+            : systemPrefersDark
+              ? "dark"
+              : "light";
+          document.documentElement.setAttribute("data-theme", activeTheme);
 
-                // Language Detection
-                var savedLang = localStorage.getItem('icell_lang') || 'en';
-                document.documentElement.setAttribute('lang', savedLang);
-                document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
-            } catch (e) {
-                console.error('Error applying initial theme/lang:', e);
-            }
-        })();
+          // Language Detection
+          var savedLang = localStorage.getItem("icell_lang") || "en";
+          document.documentElement.setAttribute("lang", savedLang);
+          document.documentElement.setAttribute(
+            "dir",
+            savedLang === "ar" ? "rtl" : "ltr",
+          );
+        } catch (e) {
+          console.error("Error applying initial theme/lang:", e);
+        }
+      })();
     </script>
 
     <!-- Fonts (English + Arabic) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Top Announcement Bar -->
     <div class="top-bar">
-        <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center flex-wrap gap-2">
-            <div class="top-bar-info d-flex align-items-center gap-4">
-                <span><i class="fa-solid fa-phone me-2 text-warning"></i> +201093970825</span>
-                <span><i class="fa-solid fa-envelope me-2 text-warning"></i> icell.systems@gmail.com</span>
-                <span class="d-none d-md-inline"><i class="fa-solid fa-location-dot me-2 text-warning"></i> <span data-i18n="top_bar_location">Asyut, Egypt</span></span>
-            </div>
-            <div class="top-bar-social d-flex align-items-center gap-3">
-                <span class="d-none d-sm-inline fw-semibold text-white-50" data-i18n="top_bar_follow">Follow Us:</span>
-                <a href="https://www.facebook.com/profile.php?id=61560646779314" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system." aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+      <div
+        class="container-fluid px-lg-5 d-flex justify-content-between align-items-center flex-wrap gap-2"
+      >
+        <div class="top-bar-info d-flex align-items-center gap-4">
+          <span
+            ><i class="fa-solid fa-phone me-2 text-warning"></i>
+            +201093970825</span
+          >
+          <span
+            ><i class="fa-solid fa-envelope me-2 text-warning"></i>
+            icell.systems@gmail.com</span
+          >
+          <span class="d-none d-md-inline"
+            ><i class="fa-solid fa-location-dot me-2 text-warning"></i>
+            <span data-i18n="top_bar_location">Asyut, Egypt</span></span
+          >
         </div>
+        <div class="top-bar-social d-flex align-items-center gap-3">
+          <span
+            class="d-none d-sm-inline fw-semibold text-white-50"
+            data-i18n="top_bar_follow"
+            >Follow Us:</span
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=61560646779314"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system."
+            aria-label="WhatsApp"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
     </div>
 
     <!-- Header / Navbar -->
     <header class="main-nav sticky-top">
-        <nav class="navbar navbar-expand-xl navbar-light bg-white py-2 shadow-sm">
-            <div class="container-fluid px-lg-5">
-                <a class="navbar-brand d-flex align-items-center" href="#hero">
-                    <img src="./IMG/logo-2.jpeg" alt="iCell Systems Logo" class="logo" />
-                </a>
+      <nav class="navbar navbar-expand-xl navbar-light bg-white py-2 shadow-sm">
+        <div class="container-fluid px-lg-5">
+          <a class="navbar-brand d-flex align-items-center" href="#hero">
+            <img
+              src="./IMG/logo-2.jpeg"
+              alt="iCell Systems Logo"
+              class="logo"
+            />
+          </a>
 
-                <!-- Mobile Action Controls & Toggle -->
-                <div class="d-flex align-items-center gap-2 d-xl-none ms-auto me-2">
-                    <button type="button" class="theme-toggle-btn mobile-toggle-btn" id="langToggleBtnMobile" aria-label="Toggle Language" title="العربية / English">
-                        <i class="fa-solid fa-globe"></i>
-                        <span class="lang-label">العربية</span>
-                    </button>
-                    <button type="button" class="theme-toggle-btn mobile-toggle-btn" id="themeToggleBtnMobile" aria-label="Toggle Dark/Light Mode" title="Theme">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                </div>
+          <!-- Mobile Action Controls & Toggle -->
+          <div class="d-flex align-items-center gap-2 d-xl-none ms-auto me-2">
+            <button
+              type="button"
+              class="theme-toggle-btn mobile-toggle-btn"
+              id="langToggleBtnMobile"
+              aria-label="Toggle Language"
+              title="العربية / English"
+            >
+              <i class="fa-solid fa-globe"></i>
+              <span class="lang-label">العربية</span>
+            </button>
+            <button
+              type="button"
+              class="theme-toggle-btn mobile-toggle-btn"
+              id="themeToggleBtnMobile"
+              aria-label="Toggle Dark/Light Mode"
+              title="Theme"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
 
-                <button
-                    class="navbar-toggler border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#hero" data-i18n="nav_home"
+                  >Home</a
                 >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" data-i18n="nav_about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services" data-i18n="nav_services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects" data-i18n="nav_projects"
+                  >Real Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#process" data-i18n="nav_process"
+                  >How It Works</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us" data-i18n="nav_why_us"
+                  >Why Choose Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq" data-i18n="nav_faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" data-i18n="nav_contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav mx-auto align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#hero" data-i18n="nav_home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" data-i18n="nav_about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services" data-i18n="nav_services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-i18n="nav_projects">Real Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#process" data-i18n="nav_process">How It Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#why-us" data-i18n="nav_why_us">Why Choose Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq" data-i18n="nav_faq">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a>
-                        </li>
-                    </ul>
+            <!-- Desktop Action Buttons -->
+            <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 ms-xl-3">
+              <!-- Language Toggle Button -->
+              <button
+                type="button"
+                class="theme-toggle-btn d-none d-xl-inline-flex"
+                id="langToggleBtn"
+                aria-label="Toggle Language"
+                title="العربية / English"
+              >
+                <i class="fa-solid fa-globe"></i>
+                <span class="lang-label" id="langBtnText">العربية</span>
+              </button>
 
-                    <!-- Desktop Action Buttons -->
-                    <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 ms-xl-3">
-                        <!-- Language Toggle Button -->
-                        <button type="button" class="theme-toggle-btn d-none d-xl-inline-flex" id="langToggleBtn" aria-label="Toggle Language" title="العربية / English">
-                            <i class="fa-solid fa-globe"></i>
-                            <span class="lang-label" id="langBtnText">العربية</span>
-                        </button>
+              <!-- Dark/Light Mode Toggle Button -->
+              <button
+                type="button"
+                class="theme-toggle-btn d-none d-xl-inline-flex"
+                id="themeToggleBtn"
+                aria-label="Toggle Dark/Light Mode"
+                title="Theme"
+              >
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+              </button>
 
-                        <!-- Dark/Light Mode Toggle Button -->
-                        <button type="button" class="theme-toggle-btn d-none d-xl-inline-flex" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Theme">
-                            <i class="fa-solid fa-moon" id="themeIcon"></i>
-                        </button>
-
-                        <!-- Get Free Quote CTA Button -->
-                        <a href="#contact" class="btn btn-primary-custom ms-xl-2">
-                            <span data-i18n="nav_quote_btn">Get Free Quote</span>
-                            <i class="fa-solid fa-arrow-right ms-2 nav-arrow-icon"></i>
-                        </a>
-                    </div>
-                </div>
+              <!-- Get Free Quote CTA Button -->
+              <a href="#contact" class="btn btn-primary-custom ms-xl-2">
+                <span data-i18n="nav_quote_btn">Get Free Quote</span>
+                <i class="fa-solid fa-arrow-right ms-2 nav-arrow-icon"></i>
+              </a>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-8 mx-auto text-center">
-                    
-                    <h1 class="hero-title" data-i18n-html="hero_title">
-                        Empowering Your World With <span class="highlight-text">Clean Solar Energy</span>
-                    </h1>
-                    <p class="hero-subtitle" data-i18n="hero_subtitle">
-                        iCell Systems designs, engineers, and installs turnkey solar power systems for residential, commercial, and agricultural sectors. Cut up to 90% off your electricity bills with zero emissions.
-                    </p>
-                    <div class="hero-actions d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="#contact" class="btn btn-primary-custom btn-lg">
-                            <i class="fa-solid fa-calculator me-2"></i> <span data-i18n="hero_btn_consult">Request Free Consultation</span>
-                        </a>
-                        <a href="#projects" class="btn btn-outline-custom btn-lg">
-                            <i class="fa-solid fa-solar-panel me-2"></i> <span data-i18n="hero_btn_projects">View Real Installations</span>
-                        </a>
-                    </div>
-                </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center min-vh-75">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="hero-title" data-i18n-html="hero_title">
+              Empowering Your World With
+              <span class="highlight-text">Clean Solar Energy</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              iCell Systems designs, engineers, and installs turnkey solar power
+              systems for residential, commercial, and agricultural sectors. Cut
+              up to 90% off your electricity bills with zero emissions.
+            </p>
+            <div
+              class="hero-actions d-flex justify-content-center gap-3 flex-wrap"
+            >
+              <a href="#contact" class="btn btn-primary-custom btn-lg">
+                <i class="fa-solid fa-calculator me-2"></i>
+                <span data-i18n="hero_btn_consult"
+                  >Request Free Consultation</span
+                >
+              </a>
+              <a href="#projects" class="btn btn-outline-custom btn-lg">
+                <i class="fa-solid fa-solar-panel me-2"></i>
+                <span data-i18n="hero_btn_projects"
+                  >View Real Installations</span
+                >
+              </a>
             </div>
-
-            <!-- Hero Trust Badges -->
-            <div class="hero-stats-grid">
-                <div class="hero-stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
-                    <div class="stat-text">
-                        <h4 class="counter" data-target="500">500+</h4>
-                        <p data-i18n="hero_stat_kw">kW Installed</p>
-                    </div>
-                </div>
-                <div class="hero-stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div class="stat-text">
-                        <h4 data-i18n="hero_stat_exp_num">+5 Years</h4>
-                        <p data-i18n="hero_stat_exp">Experience</p>
-                    </div>
-                </div>
-                <div class="hero-stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-                    <div class="stat-text">
-                        <h4 class="counter" data-target="100">100%</h4>
-                        <p data-i18n="hero_stat_clients">Satisfied Clients</p>
-                    </div>
-                </div>
-                <div class="hero-stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
-                    <div class="stat-text">
-                        <h4 data-target="450" data-i18n="hero_stat_proj_num">20+</h4>
-                        <p data-i18n="hero_stat_proj">completed project</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Hero Trust Badges -->
+        <div class="hero-stats-grid">
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="stat-text">
+              <h4 class="counter" data-target="500">500+</h4>
+              <p data-i18n="hero_stat_kw">kW Installed</p>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="stat-text">
+              <h4 data-i18n="hero_stat_exp_num">+5 Years</h4>
+              <p data-i18n="hero_stat_exp">Experience</p>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-text">
+              <h4 class="counter" data-target="100">100%</h4>
+              <p data-i18n="hero_stat_clients">Satisfied Clients</p>
+            </div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="stat-text">
+              <h4 data-target="450" data-i18n="hero_stat_proj_num">20+</h4>
+              <p data-i18n="hero_stat_proj">completed project</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Us Section -->
     <section class="about-us py-5" id="about">
-        <div class="container py-lg-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="about-image-wrapper position-relative">
-                        <div class="main-about-img">
-                            <img src="./IMG/logo-2.jpeg" alt="iCell Solar Installation Structure" class="img-fluid rounded-4 shadow-lg" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="section-badge" data-i18n="about_badge">ABOUT ICELL SYSTEMS</div>
-                    <h2 class="section-title" data-i18n-html="about_title">
-                        Powering a <span class="highlight">Sustainable & Independent</span> Future
-                    </h2>
-                    <p class="about-lead" data-i18n-html="about_lead">
-                        <strong>iCell Systems</strong> is a trusted engineering leader in renewable energy. We specialize in custom-designed photovoltaic systems, advanced battery storage, and comprehensive ongoing maintenance.
-                    </p>
-                    <p class="about-info" data-i18n="about_info">
-                        Our engineering team works closely with every client from initial feasibility studies and structural rooftop design to final utility grid connection and smart cloud-based performance monitoring.
-                    </p>
-
-                    <div class="about-features-list">
-                        <div class="feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <div>
-                                <h6 data-i18n="about_feat1_title">Turnkey Engineering & Procurement</h6>
-                                <p data-i18n="about_feat1_desc">Complete structural design, permitting, and high-efficiency tier-1 component sourcing.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <div>
-                                <h6 data-i18n="about_feat2_title">Certified Installation Technicians</h6>
-                                <p data-i18n="about_feat2_desc">Rigorous safety and structural mounting protocols built to withstand harsh weather conditions.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <div>
-                                <h6 data-i18n="about_feat3_title">Long-Term Warranty & Smart Monitoring</h6>
-                                <p data-i18n="about_feat3_desc">Real-time generation tracking via mobile app and 25-year manufacturer-backed panel warranty.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-cta-box d-flex align-items-center gap-4 mt-4 pt-2 flex-wrap">
-                        <a href="#contact" class="btn btn-primary-custom" data-i18n="about_cta_btn">Learn More About Us</a>
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="call-icon-circle"><i class="fa-solid fa-headset"></i></div>
-                            <div>
-                                <small class="text-muted d-block" data-i18n="about_support_label">Speak With Support Team</small>
-                                <strong>+201093970825</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-image-wrapper position-relative">
+              <div class="main-about-img">
+                <img
+                  src="./IMG/logo-2.jpeg"
+                  alt="iCell Solar Installation Structure"
+                  class="img-fluid rounded-4 shadow-lg"
+                />
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="section-badge" data-i18n="about_badge">
+              ABOUT ICELL SYSTEMS
+            </div>
+            <h2 class="section-title" data-i18n-html="about_title">
+              Powering a
+              <span class="highlight">Sustainable & Independent</span> Future
+            </h2>
+            <p class="about-lead" data-i18n-html="about_lead">
+              <strong>iCell Systems</strong> is a trusted engineering leader in
+              renewable energy. We specialize in custom-designed photovoltaic
+              systems, advanced battery storage, and comprehensive ongoing
+              maintenance.
+            </p>
+            <p class="about-info" data-i18n="about_info">
+              Our engineering team works closely with every client from initial
+              feasibility studies and structural rooftop design to final utility
+              grid connection and smart cloud-based performance monitoring.
+            </p>
+
+            <div class="about-features-list">
+              <div class="feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h6 data-i18n="about_feat1_title">
+                    Turnkey Engineering & Procurement
+                  </h6>
+                  <p data-i18n="about_feat1_desc">
+                    Complete structural design, permitting, and high-efficiency
+                    tier-1 component sourcing.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h6 data-i18n="about_feat2_title">
+                    Certified Installation Technicians
+                  </h6>
+                  <p data-i18n="about_feat2_desc">
+                    Rigorous safety and structural mounting protocols built to
+                    withstand harsh weather conditions.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <h6 data-i18n="about_feat3_title">
+                    Long-Term Warranty & Smart Monitoring
+                  </h6>
+                  <p data-i18n="about_feat3_desc">
+                    Real-time generation tracking via mobile app and 25-year
+                    manufacturer-backed panel warranty.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="about-cta-box d-flex align-items-center gap-4 mt-4 pt-2 flex-wrap"
+            >
+              <a
+                href="#contact"
+                class="btn btn-primary-custom"
+                data-i18n="about_cta_btn"
+                >Learn More About Us</a
+              >
+              <div class="d-flex align-items-center gap-3">
+                <div class="call-icon-circle">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <small
+                    class="text-muted d-block"
+                    data-i18n="about_support_label"
+                    >Speak With Support Team</small
+                  >
+                  <strong>+201093970825</strong>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Our Services Section -->
     <section class="services py-5" id="services">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-700 mx-auto mb-5">
-                <h2 class="section-title" data-i18n="services_title">Our Services</h2>
-                <p class="section-subtitle" data-i18n="services_subtitle">
-                    Engineered to deliver optimal return on investment, energy resilience, and maximum kilowatt-hour generation.
-                </p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Service 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-house-chimney-window"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv1_title">Residential Rooftop Solar</h3>
-                        <p class="service-card-desc" data-i18n="srv1_desc">
-                            Custom rooftop PV systems designed for family homes and villas to drastically cut electricity bills while protecting against power outages.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv1_b1"><i class="fa-solid fa-check"></i> On-grid & Hybrid configurations</li>
-                            <li data-i18n-html="srv1_b2"><i class="fa-solid fa-check"></i> Aesthetic, low-profile mounting</li>
-                            <li data-i18n-html="srv1_b3"><i class="fa-solid fa-check"></i> Real-time smart mobile tracking</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-building-wheat"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv2_title">Commercial & Industrial PV</h3>
-                        <p class="service-card-desc" data-i18n="srv2_desc">
-                            High-capacity solar installations for factories, warehouses, schools, and commercial facilities aiming to slash high-bracket industrial tariffs.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv2_b1"><i class="fa-solid fa-check"></i> High ROI & rapid payback period</li>
-                            <li data-i18n-html="srv2_b2"><i class="fa-solid fa-check"></i> Heavy-duty structural engineering</li>
-                            <li data-i18n-html="srv2_b3"><i class="fa-solid fa-check"></i> Carbon reduction compliance</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-car-battery"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv3_title">Battery Storage (BESS)</h3>
-                        <p class="service-card-desc" data-i18n="srv3_desc">
-                            High-density Lithium-ion (LiFePO4) battery energy storage systems that store daytime solar surplus for seamless 24/7 night-time and backup power.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv3_b1"><i class="fa-solid fa-check"></i> 100% Uninterrupted blackout defense</li>
-                            <li data-i18n-html="srv3_b2"><i class="fa-solid fa-check"></i> Smart load management</li>
-                            <li data-i18n-html="srv3_b3"><i class="fa-solid fa-check"></i> Long-cycle life (>6000 cycles)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                           <i class="fa-solid fa-screwdriver-wrench"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv4_title">Post-Installation Service</h3>
-                        <p class="service-card-desc" data-i18n="srv4_desc">
-                            Reliable after-sales support for solar water pumping systems, ensuring maximum performance, long service life, and uninterrupted operation.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv4_b1"><i class="fa-solid fa-check"></i> Professional system commissioning and testing</li>
-                            <li data-i18n-html="srv4_b2"><i class="fa-solid fa-check"></i> Fast troubleshooting and technical support</li>
-                            <li data-i18n-html="srv4_b3"><i class="fa-solid fa-check"></i> Long-term service plans for reliable operation</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-hand-sparkles"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv5_title">Maintenance & Professional Cleaning</h3>
-                        <p class="service-card-desc" data-i18n="srv5_desc">
-                            Specialized panel washing, thermal drone imaging, inverter diagnostics, and electrical tightening to recover up to 25% dust-induced output loss.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv5_b1"><i class="fa-solid fa-check"></i> De-ionized water cleaning protocol</li>
-                            <li data-i18n-html="srv5_b2"><i class="fa-solid fa-check"></i> Hotspot & string diagnostics</li>
-                            <li data-i18n-html="srv5_b3"><i class="fa-solid fa-check"></i> Annual preventative service plans</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card-modern h-100">
-                        <div class="service-card-icon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <h3 class="service-card-title" data-i18n="srv6_title">Energy Consultation & Design</h3>
-                        <p class="service-card-desc" data-i18n="srv6_desc">
-                            In-depth 3D shadow analysis, irradiance simulations (PVsyst), electrical load profiling, and financial payback modeling before investing.
-                        </p>
-                        <ul class="service-bullets">
-                            <li data-i18n-html="srv6_b1"><i class="fa-solid fa-check"></i> Accurate 3D shadow simulations</li>
-                            <li data-i18n-html="srv6_b2"><i class="fa-solid fa-check"></i> Tariff optimization analysis</li>
-                            <li data-i18n-html="srv6_b3"><i class="fa-solid fa-check"></i> Full regulatory documentation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+          <p class="section-subtitle" data-i18n="services_subtitle">
+            Engineered to deliver optimal return on investment, energy
+            resilience, and maximum kilowatt-hour generation.
+          </p>
         </div>
+
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-house-chimney-window"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv1_title">
+                Residential Rooftop Solar
+              </h3>
+              <p class="service-card-desc" data-i18n="srv1_desc">
+                Custom rooftop PV systems designed for family homes and villas
+                to drastically cut electricity bills while protecting against
+                power outages.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv1_b1">
+                  <i class="fa-solid fa-check"></i> On-grid & Hybrid
+                  configurations
+                </li>
+                <li data-i18n-html="srv1_b2">
+                  <i class="fa-solid fa-check"></i> Aesthetic, low-profile
+                  mounting
+                </li>
+                <li data-i18n-html="srv1_b3">
+                  <i class="fa-solid fa-check"></i> Real-time smart mobile
+                  tracking
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-building-wheat"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv2_title">
+                Commercial & Industrial PV
+              </h3>
+              <p class="service-card-desc" data-i18n="srv2_desc">
+                High-capacity solar installations for factories, warehouses,
+                schools, and commercial facilities aiming to slash high-bracket
+                industrial tariffs.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv2_b1">
+                  <i class="fa-solid fa-check"></i> High ROI & rapid payback
+                  period
+                </li>
+                <li data-i18n-html="srv2_b2">
+                  <i class="fa-solid fa-check"></i> Heavy-duty structural
+                  engineering
+                </li>
+                <li data-i18n-html="srv2_b3">
+                  <i class="fa-solid fa-check"></i> Carbon reduction compliance
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv3_title">
+                Battery Storage (BESS)
+              </h3>
+              <p class="service-card-desc" data-i18n="srv3_desc">
+                High-density Lithium-ion (LiFePO4) battery energy storage
+                systems that store daytime solar surplus for seamless 24/7
+                night-time and backup power.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv3_b1">
+                  <i class="fa-solid fa-check"></i> 100% Uninterrupted blackout
+                  defense
+                </li>
+                <li data-i18n-html="srv3_b2">
+                  <i class="fa-solid fa-check"></i> Smart load management
+                </li>
+                <li data-i18n-html="srv3_b3">
+                  <i class="fa-solid fa-check"></i> Long-cycle life (>6000
+                  cycles)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv4_title">
+                Post-Installation Service
+              </h3>
+              <p class="service-card-desc" data-i18n="srv4_desc">
+                Reliable after-sales support for solar water pumping systems,
+                ensuring maximum performance, long service life, and
+                uninterrupted operation.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv4_b1">
+                  <i class="fa-solid fa-check"></i> Professional system
+                  commissioning and testing
+                </li>
+                <li data-i18n-html="srv4_b2">
+                  <i class="fa-solid fa-check"></i> Fast troubleshooting and
+                  technical support
+                </li>
+                <li data-i18n-html="srv4_b3">
+                  <i class="fa-solid fa-check"></i> Long-term service plans for
+                  reliable operation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv5_title">
+                Maintenance & Professional Cleaning
+              </h3>
+              <p class="service-card-desc" data-i18n="srv5_desc">
+                Specialized panel washing, thermal drone imaging, inverter
+                diagnostics, and electrical tightening to recover up to 25%
+                dust-induced output loss.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv5_b1">
+                  <i class="fa-solid fa-check"></i> De-ionized water cleaning
+                  protocol
+                </li>
+                <li data-i18n-html="srv5_b2">
+                  <i class="fa-solid fa-check"></i> Hotspot & string diagnostics
+                </li>
+                <li data-i18n-html="srv5_b3">
+                  <i class="fa-solid fa-check"></i> Annual preventative service
+                  plans
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card-modern h-100">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3 class="service-card-title" data-i18n="srv6_title">
+                Energy Consultation & Design
+              </h3>
+              <p class="service-card-desc" data-i18n="srv6_desc">
+                In-depth 3D shadow analysis, irradiance simulations (PVsyst),
+                electrical load profiling, and financial payback modeling before
+                investing.
+              </p>
+              <ul class="service-bullets">
+                <li data-i18n-html="srv6_b1">
+                  <i class="fa-solid fa-check"></i> Accurate 3D shadow
+                  simulations
+                </li>
+                <li data-i18n-html="srv6_b2">
+                  <i class="fa-solid fa-check"></i> Tariff optimization analysis
+                </li>
+                <li data-i18n-html="srv6_b3">
+                  <i class="fa-solid fa-check"></i> Full regulatory
+                  documentation
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Real Work / Projects Showcase -->
     <section class="projects-section py-5" id="projects">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-700 mx-auto mb-4">
-                <h2 class="section-title" data-i18n="proj_title">Our Real Installation Projects</h2>
-                <p class="section-subtitle" data-i18n="proj_subtitle">
-                    Explore high-resolution photos of our on-site installations, structural mounting frameworks, and expert maintenance work in action.
-                </p>
-            </div>
-
-            <!-- Gallery Grid -->
-            <div class="row g-4 project-gallery">
-                <!-- Project 1 -->
-                <div class="col-md-6 col-lg-6 project-item" data-category="rooftop structural">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="./IMG/work-1.png" alt="Rooftop Solar Array Installation with Engineer" class="img-fluid" />
-                            <div class="project-overlay">
-                                <button class="btn-lightbox" data-img="./IMG/work-1.png" data-title-en="High-Capacity Rooftop PV Array" data-desc-en="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision." data-title-ar="محطة طاقة شمسية عالية القدرة على السطح" data-desc-ar="هيكل حديدي مرتفع ومخصص بالكامل مع سلاسل ألواح Tier-1 عالية الكفاءة تحت إشراف هندسي ميداني." data-title="High-Capacity Rooftop PV Array" data-desc="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision.">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i> <span data-i18n="proj_btn_view">View Full Photo</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_rooftop">Rooftop PV</span>
-                                <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_mount">Structural Mount</span>
-                            </div>
-                            <h4 class="project-name" data-i18n="proj1_name">Custom Rooftop Solar Array Installation</h4>
-                            <p class="project-meta text-muted mb-0">
-                                <span data-i18n-html="proj1_meta1"><i class="fa-solid fa-bolt text-warning me-1"></i> 60 kWp System</span>
-                                <span class="ms-3" data-i18n-html="proj1_meta2"><i class="fa-solid fa-location-dot text-danger me-1"></i> Residential Complex</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-md-6 col-lg-6 project-item" data-category="structural rooftop">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="./IMG/work-2.jpg" alt="Elevated Steel Mounting Framework" class="img-fluid" />
-                            <div class="project-overlay">
-                                <button class="btn-lightbox" data-img="./IMG/work-2.jpg" data-title-en="Heavy-Duty Elevated Mounting Framework" data-desc-en="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise." data-title-ar="هيكل تثبيت حديدي مرتفع وشديد التحمل" data-desc-ar="شاسيه حديدي هندسي مصمم لأقصى مقاومة للرياح مع زاوية ميل مثالية ودون التأثير على عزل السطح." data-title="Heavy-Duty Elevated Mounting Framework" data-desc="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise.">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i> <span data-i18n="proj_btn_view">View Full Photo</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_mount_struct">Mounting Structure</span>
-                                <span class="badge bg-warning-subtle text-dark" data-i18n="proj_tag_tilt">Engineered Tilt</span>
-                            </div>
-                            <h4 class="project-name" data-i18n="proj2_name">Heavy-Duty Elevated Steel Mount System</h4>
-                            <p class="project-meta text-muted mb-0">
-                                <span data-i18n-html="proj2_meta1"><i class="fa-solid fa-bolt text-warning me-1"></i> Hot-Dip Galvanized</span>
-                                <span class="ms-3" data-i18n-html="proj2_meta2"><i class="fa-solid fa-location-dot text-danger me-1"></i> Commercial Rooftop</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-md-6 col-lg-6 project-item" data-category="rooftop">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="./IMG/work-3.jpg" alt="Monocrystalline String Array" class="img-fluid" />
-                            <div class="project-overlay">
-                                <button class="btn-lightbox" data-img="./IMG/work-3.jpg" data-title-en="Monocrystalline Half-Cell String Array" data-desc-en="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection." data-title-ar="سلسلة ألواح أحادية الخلية فائقة الكفاءة" data-desc-ar="ألواح أحادية عالية الكفاءة مع مسارات كابلات احترافية وقواطع حماية ضد ارتفاع الجهد." data-title="Monocrystalline Half-Cell String Array" data-desc="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection.">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i> <span data-i18n="proj_btn_view">View Full Photo</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_rooftop">Rooftop PV</span>
-                                <span class="badge bg-info-subtle text-info" data-i18n="proj_tag_hight_eff">High Efficiency</span>
-                            </div>
-                            <h4 class="project-name" data-i18n="proj3_name">Precision Monocrystalline Panel Stringing</h4>
-                            <p class="project-meta text-muted mb-0">
-                                <span data-i18n-html="proj3_meta1"><i class="fa-solid fa-bolt text-warning me-1"></i> Tier-1 Monocrystalline</span>
-                                <span class="ms-3" data-i18n-html="proj3_meta2"><i class="fa-solid fa-location-dot text-danger me-1"></i> Industrial Facility</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="col-md-6 col-lg-6 project-item" data-category="maintenance">
-                    <div class="project-card">
-                        <div class="project-img-box">
-                            <img src="./IMG/work-4.jpg" alt="Solar Panel Cleaning & Maintenance" class="img-fluid" />
-                            <div class="project-overlay">
-                                <button class="btn-lightbox" data-img="./IMG/work-4.jpg" data-title-en="Post-Installation Cleaning & Performance Testing" data-desc-en="Professional technician performing soft-brush deionized panel washing and electrical commissioning check." data-title-ar="غسيل احترافي واختبار الكفاءة بعد التركيب" data-desc-ar="فنيون متخصصون ينفذون غسيل الألواح بمياه نقية مع فحص تشغيل المحطة وتوصيلاتها الكهربائية." data-title="Post-Installation Cleaning & Performance Testing" data-desc="Professional technician performing soft-brush deionized panel washing and electrical commissioning check.">
-                                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i> <span data-i18n="proj_btn_view">View Full Photo</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-tags">
-                                <span class="badge bg-info-subtle text-dark" data-i18n="proj_tag_clean_maint">Cleaning & Maintenance</span>
-                                <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_peak_out">Peak Output</span>
-                            </div>
-                            <h4 class="project-name" data-i18n="proj4_name">Professional Cleaning & Output Testing</h4>
-                            <p class="project-meta text-muted mb-0">
-                                <span data-i18n-html="proj4_meta1"><i class="fa-solid fa-wrench text-warning me-1"></i> Scheduled Care</span>
-                                <span class="ms-3" data-i18n-html="proj4_meta2"><i class="fa-solid fa-location-dot text-danger me-1"></i> On-Site Service</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interactive Modal / Lightbox -->
-            <div class="custom-lightbox-modal" id="customLightbox">
-                <div class="lightbox-backdrop"></div>
-                <div class="lightbox-content-box">
-                    <button class="lightbox-close" id="lightboxClose" aria-label="Close Preview"><i class="fa-solid fa-xmark"></i></button>
-                    <div class="lightbox-image-container">
-                        <img src="" alt="Enlarged Project Photo" id="lightboxImg" />
-                    </div>
-                    <div class="lightbox-caption">
-                        <h4 id="lightboxTitle">Project Title</h4>
-                        <p id="lightboxDesc" class="mb-0">Project Description</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-4">
+          <h2 class="section-title" data-i18n="proj_title">
+            Our Real Installation Projects
+          </h2>
+          <p class="section-subtitle" data-i18n="proj_subtitle">
+            Explore high-resolution photos of our on-site installations,
+            structural mounting frameworks, and expert maintenance work in
+            action.
+          </p>
         </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4 project-gallery">
+          <!-- Project 1 -->
+          <div
+            class="col-md-6 col-lg-6 project-item"
+            data-category="rooftop structural"
+          >
+            <div class="project-card">
+              <div class="project-img-box">
+                <img
+                  src="./IMG/work-1.png"
+                  alt="Rooftop Solar Array Installation with Engineer"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/work-1.png"
+                    data-title-en="High-Capacity Rooftop PV Array"
+                    data-desc-en="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision."
+                    data-title-ar="محطة طاقة شمسية عالية القدرة على السطح"
+                    data-desc-ar="هيكل حديدي مرتفع ومخصص بالكامل مع سلاسل ألواح Tier-1 عالية الكفاءة تحت إشراف هندسي ميداني."
+                    data-title="High-Capacity Rooftop PV Array"
+                    data-desc="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision."
+                  >
+                    <i
+                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
+                    ></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span
+                    class="badge bg-success-subtle text-success"
+                    data-i18n="proj_tag_rooftop"
+                    >Rooftop PV</span
+                  >
+                  <span
+                    class="badge bg-primary-subtle text-primary"
+                    data-i18n="proj_tag_mount"
+                    >Structural Mount</span
+                  >
+                </div>
+                <h4 class="project-name" data-i18n="proj1_name">
+                  Custom Rooftop Solar Array Installation
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj1_meta1"
+                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Highly
+                    efficient</span
+                  >
+                  <span class="ms-3" data-i18n-html="proj1_meta2"
+                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                    Residential Complex</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-md-6 col-lg-6 project-item"
+            data-category="structural rooftop"
+          >
+            <div class="project-card">
+              <div class="project-img-box">
+                <img
+                  src="./IMG/work-2.jpg"
+                  alt="Elevated Steel Mounting Framework"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/work-2.jpg"
+                    data-title-en="Heavy-Duty Elevated Mounting Framework"
+                    data-desc-en="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise."
+                    data-title-ar="هيكل تثبيت حديدي مرتفع وشديد التحمل"
+                    data-desc-ar="شاسيه حديدي هندسي مصمم لأقصى مقاومة للرياح مع زاوية ميل مثالية ودون التأثير على عزل السطح."
+                    data-title="Heavy-Duty Elevated Mounting Framework"
+                    data-desc="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise."
+                  >
+                    <i
+                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
+                    ></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span
+                    class="badge bg-primary-subtle text-primary"
+                    data-i18n="proj_tag_mount_struct"
+                    >Mounting Structure</span
+                  >
+                  <span
+                    class="badge bg-warning-subtle text-dark"
+                    data-i18n="proj_tag_tilt"
+                    >Engineered Tilt</span
+                  >
+                </div>
+                <h4 class="project-name" data-i18n="proj2_name">
+                  Heavy-Duty Elevated Steel Mount System
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj2_meta1"
+                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Hot-Dip
+                    Galvanized</span
+                  >
+                  <span class="ms-3" data-i18n-html="proj2_meta2"
+                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                    Commercial Rooftop</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-6 project-item" data-category="rooftop">
+            <div class="project-card">
+              <div class="project-img-box">
+                <img
+                  src="./IMG/work-3.jpg"
+                  alt="Monocrystalline String Array"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/work-3.jpg"
+                    data-title-en="Monocrystalline Half-Cell String Array"
+                    data-desc-en="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection."
+                    data-title-ar="سلسلة ألواح أحادية الخلية فائقة الكفاءة"
+                    data-desc-ar="ألواح أحادية عالية الكفاءة مع مسارات كابلات احترافية وقواطع حماية ضد ارتفاع الجهد."
+                    data-title="Monocrystalline Half-Cell String Array"
+                    data-desc="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection."
+                  >
+                    <i
+                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
+                    ></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span
+                    class="badge bg-success-subtle text-success"
+                    data-i18n="proj_tag_rooftop"
+                    >Rooftop PV</span
+                  >
+                  <span
+                    class="badge bg-info-subtle text-info"
+                    data-i18n="proj_tag_hight_eff"
+                    >High Efficiency</span
+                  >
+                </div>
+                <h4 class="project-name" data-i18n="proj3_name">
+                  Precision Monocrystalline Panel Stringing
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj3_meta1"
+                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Tier-1
+                    Monocrystalline</span
+                  >
+                  <span class="ms-3" data-i18n-html="proj3_meta2"
+                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                    Industrial Facility</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="col-md-6 col-lg-6 project-item"
+            data-category="maintenance"
+          >
+            <div class="project-card">
+              <div class="project-img-box">
+                <img
+                  src="./IMG/work-4.jpg"
+                  alt="Solar Panel Cleaning & Maintenance"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/work-4.jpg"
+                    data-title-en="Post-Installation Cleaning & Performance Testing"
+                    data-desc-en="Professional technician performing soft-brush deionized panel washing and electrical commissioning check."
+                    data-title-ar="غسيل احترافي واختبار الكفاءة بعد التركيب"
+                    data-desc-ar="فنيون متخصصون ينفذون غسيل الألواح بمياه نقية مع فحص تشغيل المحطة وتوصيلاتها الكهربائية."
+                    data-title="Post-Installation Cleaning & Performance Testing"
+                    data-desc="Professional technician performing soft-brush deionized panel washing and electrical commissioning check."
+                  >
+                    <i
+                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
+                    ></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span
+                    class="badge bg-info-subtle text-dark"
+                    data-i18n="proj_tag_clean_maint"
+                    >Cleaning & Maintenance</span
+                  >
+                  <span
+                    class="badge bg-success-subtle text-success"
+                    data-i18n="proj_tag_peak_out"
+                    >Peak Output</span
+                  >
+                </div>
+                <h4 class="project-name" data-i18n="proj4_name">
+                  Professional Cleaning & Output Testing
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj4_meta1"
+                    ><i class="fa-solid fa-wrench text-warning me-1"></i>
+                    Scheduled Care</span
+                  >
+                  <span class="ms-3" data-i18n-html="proj4_meta2"
+                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
+                    On-Site Service</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Modal / Lightbox -->
+        <div class="custom-lightbox-modal" id="customLightbox">
+          <div class="lightbox-backdrop"></div>
+          <div class="lightbox-content-box">
+            <button
+              class="lightbox-close"
+              id="lightboxClose"
+              aria-label="Close Preview"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="lightbox-image-container">
+              <img src="" alt="Enlarged Project Photo" id="lightboxImg" />
+            </div>
+            <div class="lightbox-caption">
+              <h4 id="lightboxTitle">Project Title</h4>
+              <p id="lightboxDesc" class="mb-0">Project Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- How It Works / Process Section -->
     <section class="process-section py-5" id="process">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-700 mx-auto mb-5">
-                <h2 class="section-title" data-i18n="proc_title">How It Works</h2>
-                <p class="section-subtitle" data-i18n="proc_subtitle">
-                    We make transitioning to solar energy effortless, transparent, and completely worry-free from start to finish.
-                </p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Step 1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="process-step-card text-center">
-                        <div class="step-number">01</div>
-                        <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
-                        <h4 class="step-title" data-i18n="proc_s1_title">Free Consultation & Site Audit</h4>
-                        <p class="step-desc" data-i18n="proc_s1_desc">
-                            We analyze your past energy bills, assess your rooftop or land orientation, and verify structural feasibility.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="process-step-card text-center">
-                        <div class="step-number">02</div>
-                        <div class="step-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                        <h4 class="step-title" data-i18n="proc_s2_title">Custom 3D Engineering Design</h4>
-                        <p class="step-desc" data-i18n="proc_s2_desc">
-                            Our specialists prepare detailed feasibility studies, installation schedules, and complete station layout plans.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="process-step-card text-center">
-                        <div class="step-number">03</div>
-                        <div class="step-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                        <h4 class="step-title" data-i18n="proc_s3_title">Precision Installation</h4>
-                        <p class="step-desc" data-i18n="proc_s3_desc">
-                            Our certified technicians install the mounting framework, panels, inverters, and safety disconnects with zero roof leaks.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="process-step-card text-center">
-                        <div class="step-number">04</div>
-                        <div class="step-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                        <h4 class="step-title" data-i18n="proc_s4_title">Grid Activation & App Monitoring</h4>
-                        <p class="step-desc" data-i18n="proc_s4_desc">
-                            We assist with utility net-metering synchronization and configure your live smartphone production monitoring app.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <h2 class="section-title" data-i18n="proc_title">How It Works</h2>
+          <p class="section-subtitle" data-i18n="proc_subtitle">
+            We make transitioning to solar energy effortless, transparent, and
+            completely worry-free from start to finish.
+          </p>
         </div>
+
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card text-center">
+              <div class="step-number">01</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-clipboard-list"></i>
+              </div>
+              <h4 class="step-title" data-i18n="proc_s1_title">
+                Free Consultation & Site Audit
+              </h4>
+              <p class="step-desc" data-i18n="proc_s1_desc">
+                We analyze your past energy bills, assess your rooftop or land
+                orientation, and verify structural feasibility.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card text-center">
+              <div class="step-number">02</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h4 class="step-title" data-i18n="proc_s2_title">
+                Custom 3D Engineering Design
+              </h4>
+              <p class="step-desc" data-i18n="proc_s2_desc">
+                Our specialists prepare detailed feasibility studies,
+                installation schedules, and complete station layout plans.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card text-center">
+              <div class="step-number">03</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h4 class="step-title" data-i18n="proc_s3_title">
+                Precision Installation
+              </h4>
+              <p class="step-desc" data-i18n="proc_s3_desc">
+                Our certified technicians install the mounting framework,
+                panels, inverters, and safety disconnects with zero roof leaks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card text-center">
+              <div class="step-number">04</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h4 class="step-title" data-i18n="proc_s4_title">
+                Grid Activation & App Monitoring
+              </h4>
+              <p class="step-desc" data-i18n="proc_s4_desc">
+                We assist with utility net-metering synchronization and
+                configure your live smartphone production monitoring app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why Choose Us Section -->
     <section class="why-choose py-5" id="why-us">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-700 mx-auto mb-5">
-                <h2 class="section-title" data-i18n="why_title">Why Leading Clients Trust iCell Systems</h2>
-                <p class="section-subtitle" data-i18n="why_subtitle">
-                    Proven engineering excellence, premium components, and an unwavering commitment to your long-term energy independence.
-                </p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-ranking-star"></i></div>
-                        <h4 data-i18n="why_c1_title">Tier-1 Certified Hardware</h4>
-                        <p data-i18n="why_c1_desc">We only install BloombergNEF Tier-1 rated solar panels and top-tier global inverter brands with the highest conversion efficiencies.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-user-gear"></i></div>
-                        <h4 data-i18n="why_c2_title">Certified Solar Engineers</h4>
-                        <p data-i18n="why_c2_desc">Our in-house technical team holds specialized renewable energy credentials and years of on-site structural engineering experience.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-landmark"></i></div>
-                        <h4 data-i18n="why_c3_title">Leading Solar Energy Company</h4>
-                        <p data-i18n="why_c3_desc">As one of the leading solar energy companies in Upper Egypt, we provide reliable solar solutions, professional installation, and dedicated technical support for agricultural, commercial, and industrial projects.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
-                        <h4 data-i18n="why_c4_title">Custom Elevated Mountings</h4>
-                        <p data-i18n="why_c4_desc">Custom structural engineering tailored to withstand coastal wind speeds and extreme desert ambient temperatures.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                        <h4 data-i18n="why_c5_title">Transparent & Flexible Financing</h4>
-                        <p data-i18n="why_c5_desc">Competitive direct pricing with clear ROI forecasts and flexible payment milestone terms with no hidden add-ons.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-card-modern">
-                        <div class="why-card-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                        <h4 data-i18n="why_c6_title">24/7 Rapid Emergency Support</h4>
-                        <p data-i18n="why_c6_desc">Our dedicated technical support team responds immediately to telemetry alerts and client maintenance requests.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <h2 class="section-title" data-i18n="why_title">
+            Why Leading Clients Trust iCell Systems
+          </h2>
+          <p class="section-subtitle" data-i18n="why_subtitle">
+            Proven engineering excellence, premium components, and an unwavering
+            commitment to your long-term energy independence.
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-ranking-star"></i>
+              </div>
+              <h4 data-i18n="why_c1_title">Tier-1 Certified Hardware</h4>
+              <p data-i18n="why_c1_desc">
+                We only install BloombergNEF Tier-1 rated solar panels and
+                top-tier global inverter brands with the highest conversion
+                efficiencies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
+              <h4 data-i18n="why_c2_title">Certified Solar Engineers</h4>
+              <p data-i18n="why_c2_desc">
+                Our in-house technical team holds specialized renewable energy
+                credentials and years of on-site structural engineering
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h4 data-i18n="why_c3_title">Leading Solar Energy Company</h4>
+              <p data-i18n="why_c3_desc">
+                As one of the leading solar energy companies in Upper Egypt, we
+                provide reliable solar solutions, professional installation, and
+                dedicated technical support for agricultural, commercial, and
+                industrial projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-cubes-stacked"></i>
+              </div>
+              <h4 data-i18n="why_c4_title">Custom Elevated Mountings</h4>
+              <p data-i18n="why_c4_desc">
+                Custom structural engineering tailored to withstand coastal wind
+                speeds and extreme desert ambient temperatures.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <h4 data-i18n="why_c5_title">Transparent & Flexible Financing</h4>
+              <p data-i18n="why_c5_desc">
+                Competitive direct pricing with clear ROI forecasts and flexible
+                payment milestone terms with no hidden add-ons.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="why-card-modern">
+              <div class="why-card-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <h4 data-i18n="why_c6_title">24/7 Rapid Emergency Support</h4>
+              <p data-i18n="why_c6_desc">
+                Our dedicated technical support team responds immediately to
+                telemetry alerts and client maintenance requests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq-section py-5" id="faq">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-700 mx-auto mb-5">
-                <span class="section-badge" data-i18n="faq_badge">GOT QUESTIONS?</span>
-                <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
-                <p class="section-subtitle" data-i18n="faq_subtitle">
-                    Find quick answers regarding solar energy installation, payback periods, maintenance, and grid integration.
-                </p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="accordion custom-accordion" id="faqAccordion">
-                        <!-- FAQ 1 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa-solid fa-circle-question me-3 text-success"></i>
-                                    <span data-i18n="faq_q1">How much can I realistically save on electricity bills with solar?</span>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-i18n-html="faq_a1">
-                                    Most residential and commercial clients reduce their electricity bills by <strong>70% to 90%</strong>. The exact savings depend on your roof size, daily sun irradiance, and electrical consumption profile. On average, our systems pay for themselves within 3 to 5 years, leaving 20+ years of virtually free energy.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 2 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="fa-solid fa-circle-question me-3 text-success"></i>
-                                    <span data-i18n="faq_q2">What is the lifespan of solar panels and inverters?</span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-i18n-html="faq_a2">
-                                    Our Tier-1 monocrystalline panels come with a <strong>25-year performance warranty</strong> and frequently produce clean electricity for 30+ years with minimal degradation (less than 0.5% per year). High-grade hybrid inverters generally have a warranty of 5 to 10 years and are engineered for continuous duty.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 3 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="fa-solid fa-circle-question me-3 text-success"></i>
-                                    <span data-i18n="faq_q3">What is the difference between On-Grid, Off-Grid, and Hybrid systems?</span>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-i18n-html="faq_a3">
-                                    <strong>On-Grid</strong> systems connect directly to the utility grid to export surplus energy via Net-Metering. <strong>Off-Grid</strong> systems operate totally independently using battery banks and are ideal for remote desert areas. <strong>Hybrid</strong> systems combine both: you remain connected to the grid while storing surplus power in batteries for 100% backup protection during outages.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 4 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <i class="fa-solid fa-circle-question me-3 text-success"></i>
-                                    <span data-i18n="faq_q4">How often do solar panels require cleaning and maintenance?</span>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-i18n-html="faq_a4">
-                                    In dusty or arid environments, dust accumulation (soiling) can reduce power output by 15% to 25%. We recommend a gentle washing routine once every 2 to 4 weeks using purified deionized water, plus an annual electrical inspection by our certified iCell engineers.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 5 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <i class="fa-solid fa-circle-question me-3 text-success"></i>
-                                    <span data-i18n="faq_q5">How long does the installation take from design to commissioning?</span>
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-i18n-html="faq_a5">
-                                    For residential systems, the physical on-site mounting and wiring typically takes <strong>2 to 4 days</strong>. Commercial projects take 1 to 3 weeks depending on the capacity. The total timeline including engineering design, permits, and net-metering approvals generally spans 2 to 4 weeks.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-lg-5">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="section-badge" data-i18n="faq_badge"
+            >GOT QUESTIONS?</span
+          >
+          <h2 class="section-title" data-i18n="faq_title">
+            Frequently Asked Questions
+          </h2>
+          <p class="section-subtitle" data-i18n="faq_subtitle">
+            Find quick answers regarding solar energy installation, payback
+            periods, maintenance, and grid integration.
+          </p>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion custom-accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i
+                      class="fa-solid fa-circle-question me-3 text-success"
+                    ></i>
+                    <span data-i18n="faq_q1"
+                      >How much can I realistically save on electricity bills
+                      with solar?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body" data-i18n-html="faq_a1">
+                    Most residential and commercial clients reduce their
+                    electricity bills by <strong>70% to 90%</strong>. The exact
+                    savings depend on your roof size, daily sun irradiance, and
+                    electrical consumption profile. On average, our systems pay
+                    for themselves within 3 to 5 years, leaving 20+ years of
+                    virtually free energy.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <i
+                      class="fa-solid fa-circle-question me-3 text-success"
+                    ></i>
+                    <span data-i18n="faq_q2"
+                      >What is the lifespan of solar panels and inverters?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body" data-i18n-html="faq_a2">
+                    Our Tier-1 monocrystalline panels come with a
+                    <strong>25-year performance warranty</strong> and frequently
+                    produce clean electricity for 30+ years with minimal
+                    degradation (less than 0.5% per year). High-grade hybrid
+                    inverters generally have a warranty of 5 to 10 years and are
+                    engineered for continuous duty.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <i
+                      class="fa-solid fa-circle-question me-3 text-success"
+                    ></i>
+                    <span data-i18n="faq_q3"
+                      >What is the difference between On-Grid, Off-Grid, and
+                      Hybrid systems?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body" data-i18n-html="faq_a3">
+                    <strong>On-Grid</strong> systems connect directly to the
+                    utility grid to export surplus energy via Net-Metering.
+                    <strong>Off-Grid</strong> systems operate totally
+                    independently using battery banks and are ideal for remote
+                    desert areas. <strong>Hybrid</strong> systems combine both:
+                    you remain connected to the grid while storing surplus power
+                    in batteries for 100% backup protection during outages.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <i
+                      class="fa-solid fa-circle-question me-3 text-success"
+                    ></i>
+                    <span data-i18n="faq_q4"
+                      >How often do solar panels require cleaning and
+                      maintenance?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body" data-i18n-html="faq_a4">
+                    In dusty or arid environments, dust accumulation (soiling)
+                    can reduce power output by 15% to 25%. We recommend a gentle
+                    washing routine once every 2 to 4 weeks using purified
+                    deionized water, plus an annual electrical inspection by our
+                    certified iCell engineers.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <i
+                      class="fa-solid fa-circle-question me-3 text-success"
+                    ></i>
+                    <span data-i18n="faq_q5"
+                      >How long does the installation take from design to
+                      commissioning?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body" data-i18n-html="faq_a5">
+                    For residential systems, the physical on-site mounting and
+                    wiring typically takes <strong>2 to 4 days</strong>.
+                    Commercial projects take 1 to 3 weeks depending on the
+                    capacity. The total timeline including engineering design,
+                    permits, and net-metering approvals generally spans 2 to 4
+                    weeks.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact & Quote Request Section -->
     <section class="contact-section py-5" id="contact">
-        <div class="container py-lg-5">
-            <div class="row g-5 align-items-center">
-                <!-- Left: Contact Details -->
-                <div class="col-lg-5">
-                    <span class="section-badge" data-i18n="contact_badge">GET IN TOUCH</span>
-                    <h2 class="section-title" data-i18n="contact_title">Ready for Clean Energy Independence?</h2>
-                    <p class="text-muted mb-4" data-i18n="contact_desc">
-                        Contact our solar engineering consultants today. We will conduct a free site assessment and provide a detailed financial and technical proposal.
-                    </p>
+      <div class="container py-lg-5">
+        <div class="row g-5 align-items-center">
+          <!-- Left: Contact Details -->
+          <div class="col-lg-5">
+            <span class="section-badge" data-i18n="contact_badge"
+              >GET IN TOUCH</span
+            >
+            <h2 class="section-title" data-i18n="contact_title">
+              Ready for Clean Energy Independence?
+            </h2>
+            <p class="text-muted mb-4" data-i18n="contact_desc">
+              Contact our solar engineering consultants today. We will conduct a
+              free site assessment and provide a detailed financial and
+              technical proposal.
+            </p>
 
-                    <div class="contact-cards-stack">
-                        <div class="contact-info-card d-flex align-items-center gap-3">
-                            <div class="c-icon-circle"><i class="fa-solid fa-phone"></i></div>
-                            <div>
-                                <small class="text-muted" data-i18n="contact_phone_lbl">Direct Phone Line</small>
-                                <h6 class="mb-0"><a href="tel:+201093970825">+20 10 93970825</a></h6>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-card d-flex align-items-center gap-3">
-                            <div class="c-icon-circle"><i class="fa-solid fa-envelope"></i></div>
-                            <div>
-                                <small class="text-muted" data-i18n="contact_email_lbl">Email Us</small>
-                                <h6 class="mb-0"><a href="mailto:icell.systems@gmail.com">icell.systems@gmail.com</a></h6>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-card d-flex align-items-center gap-3">
-                            <div class="c-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <small class="text-muted" data-i18n="contact_office_lbl">Engineering Office</small>
-                                <h6 class="mb-0" data-i18n="contact_office_val"> Asyut, Egypt</h6>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-card d-flex align-items-center gap-3">
-                            <div class="c-icon-circle"><i class="fa-solid fa-clock"></i></div>
-                            <div>
-                                <small class="text-muted" data-i18n="contact_hours_lbl">Working Hours</small>
-                                <h6 class="mb-0" data-i18n="contact_hours_val">Saturday – Thursday: 9:00 AM - 9:00 PM</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Direct WhatsApp Quick Chat Box -->
-                    <div class="whatsapp-cta-box mt-4 p-4 rounded-4">
-                        <div class="d-flex align-items-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-success fs-1"></i>
-                            <div>
-                                <h5 class="mb-1 text-white" data-i18n="contact_wa_title">Prefer Instant Chat?</h5>
-                                <p class="mb-2 text-white-50 small" data-i18n="contact_wa_sub">Message our lead solar engineer on WhatsApp now.</p>
-                                <a href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system." target="_blank" class="btn btn-sm btn-success fw-bold">
-                                    <i class="fa-brands fa-whatsapp me-1"></i> <span data-i18n="contact_wa_btn">Chat On WhatsApp</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="contact-cards-stack">
+              <div class="contact-info-card d-flex align-items-center gap-3">
+                <div class="c-icon-circle">
+                  <i class="fa-solid fa-phone"></i>
                 </div>
-
-                <!-- Right: Quote Request Form -->
-                <div class="col-lg-7">
-                    <div class="quote-form-card shadow-lg p-4 p-md-5 rounded-4 bg-white">
-                        <h3 class="fw-bold mb-2" data-i18n="quote_title">Request a Free Custom Proposal</h3>
-                        <p class="text-muted mb-4" data-i18n="quote_sub">Fill in your information and we will prepare a preliminary ROI design.</p>
-
-                        <form id="solarQuoteForm" novalidate>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="clientName" data-i18n="form_name_lbl">Full Name *</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                                        <input type="text" class="form-control" id="clientName" placeholder="e.g. John Doe" data-i18n-placeholder="form_name_ph" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="clientPhone" data-i18n="form_phone_lbl">Phone / WhatsApp Number *</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                                        <input type="tel" class="form-control" id="clientPhone" placeholder="e.g. +20 100 123 4567" data-i18n-placeholder="form_phone_ph" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="clientEmail" data-i18n="form_email_lbl">Email Address</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                                        <input type="email" class="form-control" id="clientEmail" placeholder="e.g. name@domain.com" data-i18n-placeholder="form_email_ph">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="propertyTypeSelect" data-i18n="form_prop_lbl">Property Type *</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-house-laptop"></i></span>
-                                        <select class="form-select" id="propertyTypeSelect" required>
-                                            <option value="" selected disabled data-i18n="form_opt_default">Select Property Type</option>
-                                            <option value="Residential Villa / Apartment" data-i18n="form_opt_1">Residential Villa / Apartment</option>
-                                            <option value="Commercial Facility / Office" data-i18n="form_opt_2">Commercial Facility / Office</option>
-                                            <option value="Factory / Industrial Plant" data-i18n="form_opt_3">Factory / Industrial Plant</option>
-                                            <option value="Agricultural Farm / Solar Pump" data-i18n="form_opt_4">Agricultural Farm / Solar Pump</option>
-                                            <option value="Maintenance / Cleaning Only" data-i18n="form_opt_5">Maintenance / Cleaning Only</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="estimatedBill" data-i18n="form_bill_lbl">Avg. Monthly Electricity Bill</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-receipt"></i></span>
-                                        <input type="text" class="form-control" id="estimatedBill" placeholder="e.g. $300 or 5,000 EGP" data-i18n-placeholder="form_bill_ph">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold" for="projectLocation" data-i18n="form_loc_lbl">Location / City</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
-                                        <input type="text" class="form-control" id="projectLocation" placeholder="e.g. New Cairo, Sheikh Zayed" data-i18n-placeholder="form_loc_ph">
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <label class="form-label fw-semibold" for="clientMessage" data-i18n="form_msg_lbl">Project Details / Message</label>
-                                    <textarea class="form-control" id="clientMessage" rows="3" placeholder="Tell us about your roof space, backup power needs, or specific requirements..." data-i18n-placeholder="form_msg_ph"></textarea>
-                                </div>
-
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary-custom w-100 py-3 mt-2" id="submitQuoteBtn">
-                                        <i class="fa-solid fa-paper-plane me-2 form-btn-icon"></i> <span data-i18n="form_submit_btn">Submit Proposal Request</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <div class="form-feedback-alert mt-3 d-none" id="formFeedback"></div>
-                    </div>
+                <div>
+                  <small class="text-muted" data-i18n="contact_phone_lbl"
+                    >Direct Phone Line</small
+                  >
+                  <h6 class="mb-0">
+                    <a href="tel:+201093970825">+20 10 93970825</a>
+                  </h6>
                 </div>
+              </div>
+
+              <div class="contact-info-card d-flex align-items-center gap-3">
+                <div class="c-icon-circle">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <small class="text-muted" data-i18n="contact_email_lbl"
+                    >Email Us</small
+                  >
+                  <h6 class="mb-0">
+                    <a href="mailto:icell.systems@gmail.com"
+                      >icell.systems@gmail.com</a
+                    >
+                  </h6>
+                </div>
+              </div>
+
+              <div class="contact-info-card d-flex align-items-center gap-3">
+                <div class="c-icon-circle">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <small class="text-muted" data-i18n="contact_office_lbl"
+                    >Engineering Office</small
+                  >
+                  <h6 class="mb-0" data-i18n="contact_office_val">
+                    Asyut, Egypt
+                  </h6>
+                </div>
+              </div>
+
+              <div class="contact-info-card d-flex align-items-center gap-3">
+                <div class="c-icon-circle">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <small class="text-muted" data-i18n="contact_hours_lbl"
+                    >Working Hours</small
+                  >
+                  <h6 class="mb-0" data-i18n="contact_hours_val">
+                    Saturday – Thursday: 9:00 AM - 9:00 PM
+                  </h6>
+                </div>
+              </div>
             </div>
+
+            <!-- Direct WhatsApp Quick Chat Box -->
+            <div class="whatsapp-cta-box mt-4 p-4 rounded-4">
+              <div class="d-flex align-items-center gap-3">
+                <i class="fa-brands fa-whatsapp text-success fs-1"></i>
+                <div>
+                  <h5 class="mb-1 text-white" data-i18n="contact_wa_title">
+                    Prefer Instant Chat?
+                  </h5>
+                  <p
+                    class="mb-2 text-white-50 small"
+                    data-i18n="contact_wa_sub"
+                  >
+                    Message our lead solar engineer on WhatsApp now.
+                  </p>
+                  <a
+                    href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system."
+                    target="_blank"
+                    class="btn btn-sm btn-success fw-bold"
+                  >
+                    <i class="fa-brands fa-whatsapp me-1"></i>
+                    <span data-i18n="contact_wa_btn">Chat On WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Quote Request Form -->
+          <div class="col-lg-7">
+            <div
+              class="quote-form-card shadow-lg p-4 p-md-5 rounded-4 bg-white"
+            >
+              <h3 class="fw-bold mb-2" data-i18n="quote_title">
+                Request a Free Custom Proposal
+              </h3>
+              <p class="text-muted mb-4" data-i18n="quote_sub">
+                Fill in your information and we will prepare a preliminary ROI
+                design.
+              </p>
+
+              <form id="solarQuoteForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="clientName"
+                      data-i18n="form_name_lbl"
+                      >Full Name *</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-user"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="clientName"
+                        placeholder="e.g. John Doe"
+                        data-i18n-placeholder="form_name_ph"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="clientPhone"
+                      data-i18n="form_phone_lbl"
+                      >Phone / WhatsApp Number *</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-phone"></i
+                      ></span>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="clientPhone"
+                        placeholder="e.g. +20 100 123 4567"
+                        data-i18n-placeholder="form_phone_ph"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="clientEmail"
+                      data-i18n="form_email_lbl"
+                      >Email Address</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-envelope"></i
+                      ></span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="clientEmail"
+                        placeholder="e.g. name@domain.com"
+                        data-i18n-placeholder="form_email_ph"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="propertyTypeSelect"
+                      data-i18n="form_prop_lbl"
+                      >Property Type *</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-house-laptop"></i
+                      ></span>
+                      <select
+                        class="form-select"
+                        id="propertyTypeSelect"
+                        required
+                      >
+                        <option
+                          value=""
+                          selected
+                          disabled
+                          data-i18n="form_opt_default"
+                        >
+                          Select Property Type
+                        </option>
+                        <option
+                          value="Residential Villa / Apartment"
+                          data-i18n="form_opt_1"
+                        >
+                          Residential Villa / Apartment
+                        </option>
+                        <option
+                          value="Commercial Facility / Office"
+                          data-i18n="form_opt_2"
+                        >
+                          Commercial Facility / Office
+                        </option>
+                        <option
+                          value="Factory / Industrial Plant"
+                          data-i18n="form_opt_3"
+                        >
+                          Factory / Industrial Plant
+                        </option>
+                        <option
+                          value="Agricultural Farm / Solar Pump"
+                          data-i18n="form_opt_4"
+                        >
+                          Agricultural Farm / Solar Pump
+                        </option>
+                        <option
+                          value="Maintenance / Cleaning Only"
+                          data-i18n="form_opt_5"
+                        >
+                          Maintenance / Cleaning Only
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="estimatedBill"
+                      data-i18n="form_bill_lbl"
+                      >Avg. Monthly Electricity Bill</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-receipt"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="estimatedBill"
+                        placeholder="e.g. $300 or 5,000 EGP"
+                        data-i18n-placeholder="form_bill_ph"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label
+                      class="form-label fw-semibold"
+                      for="projectLocation"
+                      data-i18n="form_loc_lbl"
+                      >Location / City</label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-location-dot"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="projectLocation"
+                        placeholder="e.g. New Cairo, Sheikh Zayed"
+                        data-i18n-placeholder="form_loc_ph"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label
+                      class="form-label fw-semibold"
+                      for="clientMessage"
+                      data-i18n="form_msg_lbl"
+                      >Project Details / Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="clientMessage"
+                      rows="3"
+                      placeholder="Tell us about your roof space, backup power needs, or specific requirements..."
+                      data-i18n-placeholder="form_msg_ph"
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary-custom w-100 py-3 mt-2"
+                      id="submitQuoteBtn"
+                    >
+                      <i class="fa-solid fa-paper-plane me-2 form-btn-icon"></i>
+                      <span data-i18n="form_submit_btn"
+                        >Submit Proposal Request</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div
+                class="form-feedback-alert mt-3 d-none"
+                id="formFeedback"
+              ></div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer-section">
-        <div class="container pt-5 pb-4">
-            <div class="row g-4 justify-content-between">
-                <!-- Col 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand mb-3">
-                        <img src="./IMG/logo-2.jpeg" alt="iCell Systems Logo" class="footer-logo bg-white p-1 rounded" />
-                    </div>
-                    <p class="footer-text" data-i18n="footer_brand_desc">
-                        iCell Systems is dedicated to engineering dependable, high-efficiency solar energy installations. We empower property owners to achieve clean energy independence with top-tier technology.
-                    </p>
-                    <div class="footer-social-links d-flex gap-2 mt-4">
-                        <a href="https://www.facebook.com/profile.php?id=61560646779314" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system." class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Quick Links -->
-                <div class="col-lg-2 col-md-6 col-6">
-                    <h5 class="footer-heading" data-i18n="footer_links_heading">Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#hero"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_home">Home</span></a></li>
-                        <li><a href="#about"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_about">About Us</span></a></li>
-                        <li><a href="#services"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_services">Services</span></a></li>
-                        <li><a href="#projects"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_projects">Real Projects</span></a></li>
-                        <li><a href="#process"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_process">How It Works</span></a></li>
-                        <li><a href="#contact"><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i> <span data-i18n="nav_contact">Contact</span></a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Contact Info -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-heading" data-i18n="footer_contact_heading">Contact Info</h5>
-                    <div class="footer-contact-item mb-2">
-                        <i class="fa-solid fa-location-dot text-warning me-2"></i>
-                        <span data-i18n="top_bar_location"> Asyut, Egypt</span>
-                    </div>
-                    <div class="footer-contact-item mb-2">
-                        <i class="fa-solid fa-phone text-warning me-2"></i>
-                        <a href="tel:+201093970825">+20 10 93970825</a>
-                    </div>
-                    <div class="footer-contact-item mb-2">
-                        <i class="fa-solid fa-envelope text-warning me-2"></i>
-                        <a href="mailto:icell.systems@gmail.com">icell.systems@gmail.com</a>
-                    </div>
-                </div>
+      <div class="container pt-5 pb-4">
+        <div class="row g-4 justify-content-between">
+          <!-- Col 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand mb-3">
+              <img
+                src="./IMG/logo-2.jpeg"
+                alt="iCell Systems Logo"
+                class="footer-logo bg-white p-1 rounded"
+              />
             </div>
-
-            <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center text-muted small d-flex justify-content-between flex-wrap gap-2">
-                <p class="mb-0">&copy; <span id="currentYear">2026</span> <span data-i18n="footer_copy">iCell Systems. All Rights Reserved.</span></p>
-                <div class="footer-sub-links d-flex gap-3">
-                    <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
-                    <a href="#" data-i18n="footer_terms">Terms of Service</a>
-                    <a href="#" data-i18n="footer_warranty">Warranty Guide</a>
-                </div>
+            <p class="footer-text" data-i18n="footer_brand_desc">
+              iCell Systems is dedicated to engineering dependable,
+              high-efficiency solar energy installations. We empower property
+              owners to achieve clean energy independence with top-tier
+              technology.
+            </p>
+            <div class="footer-social-links d-flex gap-2 mt-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61560646779314"
+                class="social-btn"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system."
+                class="social-btn"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
             </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 col-6">
+            <h5 class="footer-heading" data-i18n="footer_links_heading">
+              Quick Links
+            </h5>
+            <ul class="footer-links">
+              <li>
+                <a href="#hero"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_home">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#about"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_about">About Us</span></a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_services">Services</span></a
+                >
+              </li>
+              <li>
+                <a href="#projects"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_projects">Real Projects</span></a
+                >
+              </li>
+              <li>
+                <a href="#process"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_process">How It Works</span></a
+                >
+              </li>
+              <li>
+                <a href="#contact"
+                  ><i class="fa-solid fa-chevron-right me-1 footer-arrow"></i>
+                  <span data-i18n="nav_contact">Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading" data-i18n="footer_contact_heading">
+              Contact Info
+            </h5>
+            <div class="footer-contact-item mb-2">
+              <i class="fa-solid fa-location-dot text-warning me-2"></i>
+              <span data-i18n="top_bar_location"> Asyut, Egypt</span>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <i class="fa-solid fa-phone text-warning me-2"></i>
+              <a href="tel:+201093970825">+20 10 93970825</a>
+            </div>
+            <div class="footer-contact-item mb-2">
+              <i class="fa-solid fa-envelope text-warning me-2"></i>
+              <a href="mailto:icell.systems@gmail.com"
+                >icell.systems@gmail.com</a
+              >
+            </div>
+          </div>
         </div>
+
+        <div
+          class="footer-bottom mt-5 pt-4 border-top border-secondary text-center text-muted small d-flex justify-content-between flex-wrap gap-2"
+        >
+          <p class="mb-0">
+            &copy; <span id="currentYear">2026</span>
+            <span data-i18n="footer_copy"
+              >iCell Systems. All Rights Reserved.</span
+            >
+          </p>
+          <div class="footer-sub-links d-flex gap-3">
+            <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer_terms">Terms of Service</a>
+            <a href="#" data-i18n="footer_warranty">Warranty Guide</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span class="whatsapp-tooltip" data-i18n="wa_tooltip">Chat with us!</span>
+    <a
+      href="https://wa.me/201093970825?text=Hello%20iCell%20Systems,%20I%20would%20like%20to%20inquire%20about%20a%20solar%20system."
+      target="_blank"
+      class="floating-whatsapp"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="whatsapp-tooltip" data-i18n="wa_tooltip">Chat with us!</span>
     </a>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
 
     <!-- JavaScript Files -->
     <script src="./Java Script/bootstrap.min.js"></script>
     <script src="./Java Script/main.js"></script>
-</body>
+  </body>
 </html>
