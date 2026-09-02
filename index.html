@@ -286,7 +286,7 @@
           <div class="hero-stat-card">
             <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
             <div class="stat-text">
-              <h4 data-target="450" data-i18n="hero_stat_proj_num">20+</h4>
+              <h4 data-target="450" data-i18n="hero_stat_proj_num">50+</h4>
               <p data-i18n="hero_stat_proj">completed project</p>
             </div>
           </div>
@@ -608,240 +608,620 @@
           </p>
         </div>
 
+        <!-- Gallery Filter Controls -->
+        <div class="project-filters">
+          <button
+            type="button"
+            class="project-filter-btn active"
+            data-filter="all"
+          >
+            <i class="fa-solid fa-border-all"></i>
+            <span data-i18n="proj_filter_all">All Work</span>
+          </button>
+          <button
+            type="button"
+            class="project-filter-btn"
+            data-filter="steps"
+          >
+            <i class="fa-solid fa-list-check"></i>
+            <span data-i18n="proj_filter_steps">Installation Steps (1–10)</span>
+          </button>
+          <button
+            type="button"
+            class="project-filter-btn"
+            data-filter="cleaning"
+          >
+            <i class="fa-solid fa-hand-sparkles"></i>
+            <span data-i18n="proj_filter_cleaning">Cleaning & Maintenance</span>
+          </button>
+        </div>
+
         <!-- Gallery Grid -->
         <div class="row g-4 project-gallery">
-          <!-- Project 1 -->
-          <div
-            class="col-md-6 col-lg-6 project-item"
-            data-category="rooftop structural"
-          >
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
             <div class="project-card">
               <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 01
+                </span>
                 <img
-                  src="./IMG/work-1.png"
-                  alt="Rooftop Solar Array Installation with Engineer"
+                  src="./IMG/step-1.jpeg"
+                  alt="Step 1: Rooftop Survey & Wooden Formwork Setup"
                   class="img-fluid"
                 />
                 <div class="project-overlay">
                   <button
                     class="btn-lightbox"
-                    data-img="./IMG/work-1.png"
-                    data-title-en="High-Capacity Rooftop PV Array"
-                    data-desc-en="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision."
-                    data-title-ar="محطة طاقة شمسية عالية القدرة على السطح"
-                    data-desc-ar="هيكل حديدي مرتفع ومخصص بالكامل مع سلاسل ألواح Tier-1 عالية الكفاءة تحت إشراف هندسي ميداني."
-                    data-title="High-Capacity Rooftop PV Array"
-                    data-desc="Complete custom-elevated steel structure with high-efficiency tier-1 solar panel strings and on-site engineering supervision."
+                    data-img="./IMG/step-1.jpeg"
+                    data-title-en="Step 1: Rooftop Survey & Wooden Formwork Setup"
+                    data-desc-en="Initial on-site rooftop preparation, setting wooden formwork boundaries, and surveying foundation anchor spots for maximum structural load distribution."
+                    data-title-ar="الخطوة 1: تخطيط السطح وتركيب الشدات الخشبية للقواعد"
+                    data-desc-ar="تجهيز السطح الميداني وتحديد أبعاد الشدات الخشبية لصب القواعد الخرسانية بما يضمن توزيع الأحمال بأمان تام."
+                    data-title="Step 1: Rooftop Survey & Wooden Formwork Setup"
+                    data-desc="Initial on-site rooftop preparation, setting wooden formwork boundaries, and surveying foundation anchor spots for maximum structural load distribution."
                   >
-                    <i
-                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
-                    ></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
                     <span data-i18n="proj_btn_view">View Full Photo</span>
                   </button>
                 </div>
               </div>
               <div class="project-info">
                 <div class="project-tags">
-                  <span
-                    class="badge bg-success-subtle text-success"
-                    data-i18n="proj_tag_rooftop"
-                    >Rooftop PV</span
-                  >
-                  <span
-                    class="badge bg-primary-subtle text-primary"
-                    data-i18n="proj_tag_mount"
-                    >Structural Mount</span
-                  >
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_civil_prep">Civil Prep</span>
+                  <span class="badge bg-secondary-subtle text-secondary" data-i18n="proj_tag_base_layout">Base Formwork</span>
                 </div>
                 <h4 class="project-name" data-i18n="proj1_name">
-                  Custom Rooftop Solar Array Installation
+                  Step 1: Rooftop Survey & Wooden Formwork Setup
                 </h4>
                 <p class="project-meta text-muted mb-0">
-                  <span data-i18n-html="proj1_meta1"
-                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Highly
-                    efficient</span
-                  >
-                  <span class="ms-3" data-i18n-html="proj1_meta2"
-                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
-                    Residential Complex</span
-                  >
+                  <span data-i18n-html="proj1_meta1">
+                    <i class="fa-solid fa-ruler-combined text-warning me-1"></i> Site Survey & Civil Prep
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj1_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 01
+                  </span>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div
-            class="col-md-6 col-lg-6 project-item"
-            data-category="structural rooftop"
-          >
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
             <div class="project-card">
               <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 02
+                </span>
                 <img
-                  src="./IMG/work-2.jpg"
-                  alt="Elevated Steel Mounting Framework"
+                  src="./IMG/Step-2.jpeg"
+                  alt="Step 2: Anchor Brackets & Studs Alignment"
                   class="img-fluid"
                 />
                 <div class="project-overlay">
                   <button
                     class="btn-lightbox"
-                    data-img="./IMG/work-2.jpg"
-                    data-title-en="Heavy-Duty Elevated Mounting Framework"
-                    data-desc-en="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise."
-                    data-title-ar="هيكل تثبيت حديدي مرتفع وشديد التحمل"
-                    data-desc-ar="شاسيه حديدي هندسي مصمم لأقصى مقاومة للرياح مع زاوية ميل مثالية ودون التأثير على عزل السطح."
-                    data-title="Heavy-Duty Elevated Mounting Framework"
-                    data-desc="Engineered elevated steel chassis designed for maximum wind resistance, perfect tilt angle, and zero roof waterproofing compromise."
+                    data-img="./IMG/Step-2.jpeg"
+                    data-title-en="Step 2: Anchor Brackets & Studs Alignment"
+                    data-desc-en="Accurate positioning and alignment of heavy-duty galvanized anchor brackets within the formwork frames prior to concrete pouring."
+                    data-title-ar="الخطوة 2: تثبيت ومحاذاة قوائم ومسامير التثبيت الهندسية"
+                    data-desc-ar="تثبيت ومحاذاة القوائم المعدنية ومسامير التثبيت المجلفنة داخل القوالب الخشبية بدقة هندسية قبل مرحلة الصب."
+                    data-title="Step 2: Anchor Brackets & Studs Alignment"
+                    data-desc="Accurate positioning and alignment of heavy-duty galvanized anchor brackets within the formwork frames prior to concrete pouring."
                   >
-                    <i
-                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
-                    ></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
                     <span data-i18n="proj_btn_view">View Full Photo</span>
                   </button>
                 </div>
               </div>
               <div class="project-info">
                 <div class="project-tags">
-                  <span
-                    class="badge bg-primary-subtle text-primary"
-                    data-i18n="proj_tag_mount_struct"
-                    >Mounting Structure</span
-                  >
-                  <span
-                    class="badge bg-warning-subtle text-dark"
-                    data-i18n="proj_tag_tilt"
-                    >Engineered Tilt</span
-                  >
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_anchor_studs">Anchor Studs</span>
+                  <span class="badge bg-warning-subtle text-dark" data-i18n="proj_tag_precision_pos">Precision Placement</span>
                 </div>
                 <h4 class="project-name" data-i18n="proj2_name">
-                  Heavy-Duty Elevated Steel Mount System
+                  Step 2: Anchor Brackets & Studs Alignment
                 </h4>
                 <p class="project-meta text-muted mb-0">
-                  <span data-i18n-html="proj2_meta1"
-                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Hot-Dip
-                    Galvanized</span
-                  >
-                  <span class="ms-3" data-i18n-html="proj2_meta2"
-                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
-                    Commercial Rooftop</span
-                  >
+                  <span data-i18n-html="proj2_meta1">
+                    <i class="fa-solid fa-arrows-to-dot text-warning me-1"></i> Precise Stud Alignment
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj2_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 02
+                  </span>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Project 3 -->
-          <div class="col-md-6 col-lg-6 project-item" data-category="rooftop">
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
             <div class="project-card">
               <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 03
+                </span>
                 <img
-                  src="./IMG/work-3.jpg"
-                  alt="Monocrystalline String Array"
+                  src="./IMG/step-3.jpeg"
+                  alt="Step 3: Concrete Foundation Pouring & Curing"
                   class="img-fluid"
                 />
                 <div class="project-overlay">
                   <button
                     class="btn-lightbox"
-                    data-img="./IMG/work-3.jpg"
-                    data-title-en="Monocrystalline Half-Cell String Array"
-                    data-desc-en="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection."
-                    data-title-ar="سلسلة ألواح أحادية الخلية فائقة الكفاءة"
-                    data-desc-ar="ألواح أحادية عالية الكفاءة مع مسارات كابلات احترافية وقواطع حماية ضد ارتفاع الجهد."
-                    data-title="Monocrystalline Half-Cell String Array"
-                    data-desc="High-efficiency monocrystalline solar panels connected with precision cable routing, DC isolators, and surge protection."
+                    data-img="./IMG/step-3.jpeg"
+                    data-title-en="Step 3: Concrete Foundation Pouring & Curing"
+                    data-desc-en="Pouring reinforced concrete into foundation forms around the anchor uprights to ensure heavy ballast stability without penetrating roof waterproofing."
+                    data-title-ar="الخطوة 3: صب ومعالجة القواعد الخرسانية المسلحة"
+                    data-desc-ar="صب الخرسانة المسلحة داخل القوالب حول القوائم لضمان ثبات وأمان عالي ضد الرياح دون المساس بعزل السطح."
+                    data-title="Step 3: Concrete Foundation Pouring & Curing"
+                    data-desc="Pouring reinforced concrete into foundation forms around the anchor uprights to ensure heavy ballast stability without penetrating roof waterproofing."
                   >
-                    <i
-                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
-                    ></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
                     <span data-i18n="proj_btn_view">View Full Photo</span>
                   </button>
                 </div>
               </div>
               <div class="project-info">
                 <div class="project-tags">
-                  <span
-                    class="badge bg-success-subtle text-success"
-                    data-i18n="proj_tag_rooftop"
-                    >Rooftop PV</span
-                  >
-                  <span
-                    class="badge bg-info-subtle text-info"
-                    data-i18n="proj_tag_hight_eff"
-                    >High Efficiency</span
-                  >
+                  <span class="badge bg-dark-subtle text-dark" data-i18n="proj_tag_concrete_ballast">Concrete Ballast</span>
+                  <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_zero_leaks">Zero Roof Leaks</span>
                 </div>
                 <h4 class="project-name" data-i18n="proj3_name">
-                  Precision Monocrystalline Panel Stringing
+                  Step 3: Concrete Foundation Pouring & Curing
                 </h4>
                 <p class="project-meta text-muted mb-0">
-                  <span data-i18n-html="proj3_meta1"
-                    ><i class="fa-solid fa-bolt text-warning me-1"></i> Tier-1
-                    Monocrystalline</span
-                  >
-                  <span class="ms-3" data-i18n-html="proj3_meta2"
-                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
-                    Industrial Facility</span
-                  >
+                  <span data-i18n-html="proj3_meta1">
+                    <i class="fa-solid fa-cubes text-warning me-1"></i> Reinforced Concrete Ballast
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj3_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 03
+                  </span>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Project 4 -->
-          <div
-            class="col-md-6 col-lg-6 project-item"
-            data-category="maintenance"
-          >
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
             <div class="project-card">
               <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 04
+                </span>
                 <img
-                  src="./IMG/work-4.jpg"
-                  alt="Solar Panel Cleaning & Maintenance"
+                  src="./IMG/step-4.jpeg"
+                  alt="Step 4: Galvanized Base Rails & Module Delivery"
                   class="img-fluid"
                 />
                 <div class="project-overlay">
                   <button
                     class="btn-lightbox"
-                    data-img="./IMG/work-4.jpg"
-                    data-title-en="Post-Installation Cleaning & Performance Testing"
-                    data-desc-en="Professional technician performing soft-brush deionized panel washing and electrical commissioning check."
-                    data-title-ar="غسيل احترافي واختبار الكفاءة بعد التركيب"
-                    data-desc-ar="فنيون متخصصون ينفذون غسيل الألواح بمياه نقية مع فحص تشغيل المحطة وتوصيلاتها الكهربائية."
-                    data-title="Post-Installation Cleaning & Performance Testing"
-                    data-desc="Professional technician performing soft-brush deionized panel washing and electrical commissioning check."
+                    data-img="./IMG/step-4.jpeg"
+                    data-title-en="Step 4: Galvanized Base Rails & Module Delivery"
+                    data-desc-en="Fastening galvanized longitudinal steel rails onto the cured concrete bases and staging Tier-1 solar modules on-site for immediate assembly."
+                    data-title-ar="الخطوة 4: تركيب القضبان الحاملة وتوريد الألواح للموقع"
+                    data-desc-ar="تثبيت القضبان والشاسيهات المعدنية المجلفنة على القواعد الخرسانية بعد جفافها وتوريد الألواح عالية الكفاءة إلى الموقع."
+                    data-title="Step 4: Galvanized Base Rails & Module Delivery"
+                    data-desc="Fastening galvanized longitudinal steel rails onto the cured concrete bases and staging Tier-1 solar modules on-site for immediate assembly."
                   >
-                    <i
-                      class="fa-solid fa-up-right-and-down-left-from-center me-1"
-                    ></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
                     <span data-i18n="proj_btn_view">View Full Photo</span>
                   </button>
                 </div>
               </div>
               <div class="project-info">
                 <div class="project-tags">
-                  <span
-                    class="badge bg-info-subtle text-dark"
-                    data-i18n="proj_tag_clean_maint"
-                    >Cleaning & Maintenance</span
-                  >
-                  <span
-                    class="badge bg-success-subtle text-success"
-                    data-i18n="proj_tag_peak_out"
-                    >Peak Output</span
-                  >
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_base_rails">Galvanized Rails</span>
+                  <span class="badge bg-info-subtle text-info" data-i18n="proj_tag_tier1_logistics">Tier-1 Delivery</span>
                 </div>
                 <h4 class="project-name" data-i18n="proj4_name">
-                  Professional Cleaning & Output Testing
+                  Step 4: Galvanized Base Rails & Module Delivery
                 </h4>
                 <p class="project-meta text-muted mb-0">
-                  <span data-i18n-html="proj4_meta1"
-                    ><i class="fa-solid fa-wrench text-warning me-1"></i>
-                    Scheduled Care</span
+                  <span data-i18n-html="proj4_meta1">
+                    <i class="fa-solid fa-truck-ramp-box text-warning me-1"></i> Base Rails & Logistics
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj4_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 04
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 05
+                </span>
+                <img
+                  src="./IMG/step-5.jpeg"
+                  alt="Step 5: Elevated Structure & Tilt Bracing Assembly"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-5.jpeg"
+                    data-title-en="Step 5: Elevated Structure & Tilt Bracing Assembly"
+                    data-desc-en="Erecting elevated hot-dip galvanized steel uprights and diagonal cross-bracing calibrated to the optimal solar irradiance angle."
+                    data-title-ar="الخطوة 5: تجميع الهيكل المرتفع وضبط زوايا الميل والدعامات"
+                    data-desc-ar="تركيب وتجميع القوائم الفولاذية المرتفعة والدعامات القطرية المضادة للاهتزاز والمضبوطة على أفضل زاوية ميل شمسية."
+                    data-title="Step 5: Elevated Structure & Tilt Bracing Assembly"
+                    data-desc="Erecting elevated hot-dip galvanized steel uprights and diagonal cross-bracing calibrated to the optimal solar irradiance angle."
                   >
-                  <span class="ms-3" data-i18n-html="proj4_meta2"
-                    ><i class="fa-solid fa-location-dot text-danger me-1"></i>
-                    On-Site Service</span
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_elevated_steel">Elevated Chassis</span>
+                  <span class="badge bg-warning-subtle text-dark" data-i18n="proj_tag_tilt">Engineered Tilt</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj5_name">
+                  Step 5: Elevated Structure & Tilt Bracing Assembly
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj5_meta1">
+                    <i class="fa-solid fa-shield-halved text-warning me-1"></i> Wind-Resistant Bracing
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj5_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 05
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 06
+                </span>
+                <img
+                  src="./IMG/step-6.jpeg"
+                  alt="Step 6: Precision Spirit Level Calibration"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-6.jpeg"
+                    data-title-en="Step 6: Precision Spirit Level Calibration"
+                    data-desc-en="Multi-point spirit level inspection across every structural channel to guarantee complete horizontal plane uniformity prior to panel fastening."
+                    data-title-ar="الخطوة 6: فحص ومعايرة الاستواء الدقيق بميزان الماء"
+                    data-desc-ar="فحص هندسي متعدد النقاط باستخدام ميزان الماء لضمان استواء وتطابق مسار الشاسيهات بدقة تامة قبل تركيب الألواح."
+                    data-title="Step 6: Precision Spirit Level Calibration"
+                    data-desc="Multi-point spirit level inspection across every structural channel to guarantee complete horizontal plane uniformity prior to panel fastening."
                   >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-danger-subtle text-danger" data-i18n="proj_tag_spirit_level">Spirit Level Check</span>
+                  <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_zero_deviation">Zero Deviation</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj6_name">
+                  Step 6: Precision Spirit Level Calibration
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj6_meta1">
+                    <i class="fa-solid fa-gauge-high text-warning me-1"></i> Planar Level Calibration
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj6_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 06
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 07
+                </span>
+                <img
+                  src="./IMG/step-7.jpeg"
+                  alt="Step 7: Completed Mounting Structure Chassis"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-7.jpeg"
+                    data-title-en="Step 7: Completed Mounting Structure Chassis"
+                    data-desc-en="Fully erected, rigid elevated steel structure ready for solar PV panel installation, meeting international seismic and high wind load standards."
+                    data-title-ar="الخطوة 7: اكتمال وجاهزية الهيكل المعدني الحامل بالكامل"
+                    data-desc-ar="اكتمال شاسيه الهيكل المعدني المرتفع بالكامل والتأكد من متانته وجاهزيته التامة لاستقبال وتثبيت الألواح الشمسية."
+                    data-title="Step 7: Completed Mounting Structure Chassis"
+                    data-desc="Fully erected, rigid elevated steel structure ready for solar PV panel installation, meeting international seismic and high wind load standards."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_chassis_ready">Chassis Complete</span>
+                  <span class="badge bg-secondary-subtle text-secondary" data-i18n="proj_tag_rigid_mount">Rigid Mount</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj7_name">
+                  Step 7: Completed Mounting Structure Chassis
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj7_meta1">
+                    <i class="fa-solid fa-check-double text-warning me-1"></i> 100% Rigid Chassis Ready
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj7_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 07
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 08
+                </span>
+                <img
+                  src="./IMG/step-8.jpeg"
+                  alt="Step 8: Solar PV Modules Installation & Clamping"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-8.jpeg"
+                    data-title-en="Step 8: Solar PV Modules Installation & Clamping"
+                    data-desc-en="Skilled technicians hoisting and fastening high-efficiency monocrystalline solar modules onto structural rails using anodized aluminum mid/end clamps."
+                    data-title-ar="الخطوة 8: بدء تثبيت وتأمين الألواح الشمسية على الهيكل"
+                    data-desc-ar="يقوم الفنيون المتخصصون برفع وتثبيت الألواح الشمسية الأحادية على القضبان بواسطة كلبسات الألمنيوم المقاومة للتآكل."
+                    data-title="Step 8: Solar PV Modules Installation & Clamping"
+                    data-desc="Skilled technicians hoisting and fastening high-efficiency monocrystalline solar modules onto structural rails using anodized aluminum mid/end clamps."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_panel_mounting">Panel Mounting</span>
+                  <span class="badge bg-info-subtle text-info" data-i18n="proj_tag_anodized_clamps">Anodized Clamps</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj8_name">
+                  Step 8: Solar PV Modules Installation & Clamping
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj8_meta1">
+                    <i class="fa-solid fa-solar-panel text-warning me-1"></i> Tier-1 Monocrystalline PV
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj8_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 08
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 09
+                </span>
+                <img
+                  src="./IMG/step-9.jpeg"
+                  alt="Step 9: Complete Array Stringing & Cable Routing"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-9.jpeg"
+                    data-title-en="Step 9: Complete Array Stringing & Cable Routing"
+                    data-desc-en="Seamless array string integration with UV-resistant solar DC cabling, grounded frames, and dedicated conduits for optimal generation."
+                    data-title-ar="الخطوة 9: اكتمال مصفوفة الألواح وتمديد مسارات الكابلات"
+                    data-desc-ar="اكتمال صفوف مصفوفة الألواح الشمسية وربط السلاسل بكابلات تيار مستمر (DC) مقاومة للشمس ومسارات معزولة ومحمية."
+                    data-title="Step 9: Complete Array Stringing & Cable Routing"
+                    data-desc="Seamless array string integration with UV-resistant solar DC cabling, grounded frames, and dedicated conduits for optimal generation."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_array_assembly">Array Assembly</span>
+                  <span class="badge bg-warning-subtle text-dark" data-i18n="proj_tag_dc_wiring">DC Cable Routing</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj9_name">
+                  Step 9: Complete Array Stringing & Cable Routing
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj9_meta1">
+                    <i class="fa-solid fa-network-wired text-warning me-1"></i> Clean String & Conduits
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj9_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 09
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 10 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="steps">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge">
+                  <i class="fa-solid fa-layer-group text-warning"></i>
+                  <span data-i18n="proj_step_prefix">Step</span> 10
+                </span>
+                <img
+                  src="./IMG/step-10.jpeg"
+                  alt="Step 10: Final Engineering Inspection & Handover"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/step-10.jpeg"
+                    data-title-en="Step 10: Final Engineering Inspection & Handover"
+                    data-desc-en="Lead engineer performing electrical commissioning, inverter synchronisation, thermal check, and successful project handover."
+                    data-title-ar="الخطوة 10: الفحص الهندسي النهائي، التشغيل وتسليم المشروع"
+                    data-desc-ar="إشراف هندسي ميداني وإجراء اختبارات الجهد وتشغيل المحولات وربط منظومة المراقبة الذكية وتسليم المحطة للعميل بأعلى معايير الجودة."
+                    data-title="Step 10: Final Engineering Inspection & Handover"
+                    data-desc="Lead engineer performing electrical commissioning, inverter synchronisation, thermal check, and successful project handover."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_commissioning">Commissioning</span>
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_certified_eng">Engineer Certified</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj10_name">
+                  Step 10: Final Engineering Inspection & Handover
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj10_meta1">
+                    <i class="fa-solid fa-circle-check text-warning me-1"></i> Certified Commissioning
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj10_meta2">
+                    <i class="fa-solid fa-layer-group text-primary me-1"></i> Installation Step 10
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cleaning Before -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="cleaning">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge badge-clean-before">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <span data-i18n="proj_step_clean_before">Before Cleaning</span>
+                </span>
+                <img
+                  src="./IMG/not-clean-imge.jpeg"
+                  alt="Maintenance Phase: Dust & Soiling Before Cleaning"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/not-clean-imge.jpeg"
+                    data-title-en="Maintenance Phase: Dust & Soiling Before Cleaning"
+                    data-desc-en="Heavy sand and dust accumulation on solar panel glass, which can reduce generation efficiency by up to 25% without regular professional maintenance."
+                    data-title-ar="مرحلة الصيانة: تراكم الأتربة والغبار قبل التنظيف"
+                    data-desc-ar="تراكم طبقات الغبار والرمال الصحراوية على سطح الألواح، مما يتسبب في حجب الإشعاع الشمسي وخفض إنتاجية الطاقة بنسبة تصل إلى 25%."
+                    data-title="Maintenance Phase: Dust & Soiling Before Cleaning"
+                    data-desc="Heavy sand and dust accumulation on solar panel glass, which can reduce generation efficiency by up to 25% without regular professional maintenance."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-danger-subtle text-danger" data-i18n="proj_tag_before_wash">Before Cleaning</span>
+                  <span class="badge bg-warning-subtle text-dark" data-i18n="proj_tag_dust_soiling">Dust Soiling</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj_clean_before_name">
+                  Maintenance Phase: Dust & Soiling Before Cleaning
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj_clean_before_meta1">
+                    <i class="fa-solid fa-triangle-exclamation text-warning me-1"></i> Output Loss: Up to 25%
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj_clean_before_meta2">
+                    <i class="fa-solid fa-hand-sparkles text-danger me-1"></i> Soiled Panels
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cleaning After -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="cleaning">
+            <div class="project-card">
+              <div class="project-img-box">
+                <span class="project-step-badge badge-clean-after">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="proj_step_clean_after">After Cleaning</span>
+                </span>
+                <img
+                  src="./IMG/clean-imge.jpeg"
+                  alt="Maintenance Phase: Restored Peak Output After Cleaning"
+                  class="img-fluid"
+                />
+                <div class="project-overlay">
+                  <button
+                    class="btn-lightbox"
+                    data-img="./IMG/clean-imge.jpeg"
+                    data-title-en="Maintenance Phase: Restored Peak Output After Cleaning"
+                    data-desc-en="Crystal-clean solar array washed using de-ionized purified water, immediately recovering 100% peak energy generation capacity."
+                    data-title-ar="مرحلة الصيانة: استعادة الكفاءة القصوى بعد الغسيل الاحترافي"
+                    data-desc-ar="ألواح شمسية نقية ولامعة تماماً بعد غسيلها بمياه منزوعة الأيونات والأملاح، مما يعيد كفاءة توليد الكهرباء بنسبة 100% فوراً."
+                    data-title="Maintenance Phase: Restored Peak Output After Cleaning"
+                    data-desc="Crystal-clean solar array washed using de-ionized purified water, immediately recovering 100% peak energy generation capacity."
+                  >
+                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1"></i>
+                    <span data-i18n="proj_btn_view">View Full Photo</span>
+                  </button>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="badge bg-success-subtle text-success" data-i18n="proj_tag_after_wash">After Cleaning</span>
+                  <span class="badge bg-info-subtle text-info" data-i18n="proj_tag_deionized_clean">De-Ionized Clean</span>
+                  <span class="badge bg-primary-subtle text-primary" data-i18n="proj_tag_peak_out">100% Peak Output</span>
+                </div>
+                <h4 class="project-name" data-i18n="proj_clean_after_name">
+                  Maintenance Phase: Restored Peak Output After Cleaning
+                </h4>
+                <p class="project-meta text-muted mb-0">
+                  <span data-i18n-html="proj_clean_after_meta1">
+                    <i class="fa-solid fa-bolt text-warning me-1"></i> 100% Restored Output
+                  </span>
+                  <span class="ms-3" data-i18n-html="proj_clean_after_meta2">
+                    <i class="fa-solid fa-circle-check text-success me-1"></i> De-Ionized Wash
+                  </span>
                 </p>
               </div>
             </div>
