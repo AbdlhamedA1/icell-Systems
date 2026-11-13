@@ -1490,3 +1490,339 @@ nav.navbar {
     }
 }
 
+/* ==========================================================================
+   New Sections: Training Programs, Testimonials, Customer Feedback
+   ========================================================================== */
+
+/* 1. Training Programs Section */
+.training-section {
+    background-color: var(--bg-surface-alt);
+    position: relative;
+}
+
+.training-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.training-card:hover {
+    box-shadow: var(--hover-shadow);
+}
+
+.training-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-height: 320px;
+}
+
+.training-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 320px;
+    transition: transform 0.5s ease;
+}
+
+.training-card:hover .training-img {
+    transform: scale(1.03);
+}
+
+.training-img-overlay {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 2;
+}
+
+[dir="rtl"] .training-img-overlay {
+    left: auto;
+    right: 16px;
+}
+
+.bg-success-custom {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.training-program-title {
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    font-weight: 800;
+    color: var(--text-heading);
+    line-height: 1.35;
+}
+
+.training-program-desc {
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.training-icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.training-detail-item {
+    padding: 8px 0;
+}
+
+.training-detail-item p {
+    color: var(--text-main);
+    line-height: 1.65;
+    font-size: 0.94rem;
+}
+
+/* 2. Customer Testimonials Section */
+.testimonials-section {
+    background-color: var(--bg-body);
+    position: relative;
+}
+
+.testimonial-invite-card {
+    background: var(--bg-card);
+    border: 2px dashed var(--border-color);
+    border-radius: 24px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.testimonial-invite-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--hover-shadow);
+}
+
+.invite-icon-wrap {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: var(--primary-soft);
+    color: var(--primary);
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--hover-shadow);
+    border-color: var(--primary);
+}
+
+.testimonial-stars {
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+.testimonial-review {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 16px 0;
+}
+
+.testimonial-author-name {
+    font-weight: 700;
+    color: var(--text-heading);
+    font-size: 1rem;
+}
+
+.testimonial-service-tag {
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* 3. Customer Satisfaction / Share Your Feedback Section */
+.feedback-section {
+    background-color: var(--bg-surface-alt);
+    position: relative;
+}
+
+.feedback-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.feedback-card .form-label {
+    color: var(--text-heading);
+    font-size: 0.92rem;
+}
+
+.feedback-card .form-control,
+.feedback-card .form-select {
+    padding: 12px 16px;
+    font-size: 0.92rem;
+    background-color: var(--bg-input);
+    color: var(--text-heading);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.feedback-card .input-group-text {
+    background-color: var(--bg-surface-alt);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+.feedback-card .form-control:focus,
+.feedback-card .form-select:focus {
+    background-color: var(--bg-input);
+    color: var(--text-heading);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.18);
+}
+
+[data-theme="dark"] .feedback-card .form-select option {
+    background-color: #162032;
+    color: #e2e8f0;
+}
+
+.rating-group-box {
+    background-color: var(--bg-surface-alt);
+    border: 1.5px solid var(--border-color);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.rating-group-box.has-error {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.05);
+}
+
+.rating-value-badge {
+    font-size: 0.78rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.star-rating-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star-btn {
+    background: transparent;
+    border: none;
+    padding: 8px 10px;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 6px;
+    transition: transform 0.15s ease, color 0.15s ease;
+    touch-action: manipulation;
+}
+
+.star-btn:hover,
+.star-btn:focus-visible {
+    transform: scale(1.15);
+    outline: none;
+    color: var(--accent);
+}
+
+.star-btn.active i,
+.star-btn.hovered i {
+    color: var(--accent);
+    font-weight: 900;
+}
+
+.star-btn.active i::before,
+.star-btn.hovered i::before {
+    content: "\f005"; /* FontAwesome fa-solid fa-star */
+}
+
+/* WhatsApp Action Button */
+.btn-whatsapp-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-whatsapp-action:hover {
+    background: #1eb956;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(37, 211, 102, 0.45);
+}
+
+/* Responsive tweaks for new sections */
+@media (max-width: 992px) {
+    .training-img-wrap {
+        min-height: 260px;
+        max-height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .training-card {
+        border-radius: 18px;
+    }
+    .training-program-title {
+        font-size: 1.35rem;
+    }
+    .training-img-wrap {
+        min-height: 220px;
+        max-height: 280px;
+    }
+    .star-btn {
+        padding: 6px 8px;
+        font-size: 1.35rem;
+    }
+    .feedback-card {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .star-btn {
+        padding: 6px;
+        font-size: 1.25rem;
+    }
+    .star-rating-control {
+        gap: 2px;
+    }
+    .rating-group-box {
+        padding: 12px !important;
+    }
+}
+

@@ -227,7 +227,58 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_privacy: 'Privacy Policy',
             footer_terms: 'Terms of Service',
             footer_warranty: 'Warranty Guide',
-            wa_tooltip: 'Chat with us!'
+            wa_tooltip: 'Chat with us!',
+
+            // Section 1: Training Programs
+            training_badge: 'Training Programs',
+            training_title: 'Training Programs',
+            training_subtitle: 'A specialized qualification initiative for future solar engineering and technical leaders.',
+            training_card_badge: 'Practical & Theoretical',
+            training_prog_title: 'Solar Power Stations (From Beginner to Professional)',
+            training_prog_desc: 'A specialized training program for students of technological universities and technicians interested in working in solar power station installation and maintenance.',
+            training_duration_lbl: 'Duration:',
+            training_duration_val: 'Three Weeks.',
+            training_audience_val: 'Technological Students & Technicians',
+            training_detail_1: 'The program combines theoretical lectures covering different types of solar power stations and their components with practical training covering all installation and operation procedures for different station types.',
+            training_detail_2: 'Training is delivered by highly experienced specialists to ensure participants acquire the skills and knowledge required to professionally practice the field by the end of the program.',
+            training_detail_3: 'The company provides all necessary tools and equipment, ensuring the highest standards of professionalism, occupational safety, and competitive pricing.',
+            training_wa_btn: 'Inquire & Register via WhatsApp',
+            training_wa_msg: 'Hello iCell Systems, I would like to inquire and register for the training program: Solar Power Stations (From Beginner to Professional).',
+
+            // Section 2: Customer Testimonials
+            testimonials_badge: 'Customer Testimonials',
+            testimonials_title: 'Customer Testimonials',
+            testimonials_subtitle: 'Genuine feedback and reviews from our valued residential, commercial, and agricultural clients.',
+            testimonials_invite_title: 'Every Client Voice Matters',
+            testimonials_invite_desc: 'We are committed to delivering the highest standards of engineering quality. We welcome reviews and feedback from all our clients to continuously enhance our services and showcase genuine customer experiences.',
+            testimonials_invite_btn: 'Share Your Review Now',
+
+            // Section 3: Customer Satisfaction / Share Your Feedback
+            feedback_badge: 'Customer Satisfaction',
+            feedback_title: 'Share Your Feedback',
+            feedback_subtitle: 'Your feedback drives our quality forward. Help us continually improve our solar engineering and installation services.',
+            feedback_name_lbl: 'Customer Name (Optional)',
+            feedback_name_ph: 'Enter your name or leave blank',
+            feedback_service_lbl: 'Service Type *',
+            feedback_service_opt_default: 'Select Service Type',
+            feedback_service_opt_install: 'Solar Station Installation',
+            feedback_service_opt_maint: 'Solar Station Maintenance',
+            feedback_service_opt_consult: 'Technical Consultation',
+            feedback_service_opt_supply: 'Equipment Supply',
+            feedback_service_opt_training: 'Training Program',
+            feedback_service_opt_other: 'Other',
+            feedback_ratings_heading: 'Please Rate The Following (1 to 5 Stars):',
+            feedback_quality_lbl: '1. Service Quality *',
+            feedback_prof_lbl: '2. Team Professionalism and Communication *',
+            feedback_punct_lbl: '3. Punctuality *',
+            feedback_overall_lbl: '4. Overall Satisfaction *',
+            feedback_comments_lbl: 'Additional Comments and Suggestions',
+            feedback_comments_ph: 'Share your thoughts, suggestions, or areas of improvement...',
+            feedback_submit_btn: 'Submit Feedback via WhatsApp',
+            feedback_notice_text: 'Clicking will open WhatsApp with your formatted feedback ready to send to our official team.',
+            feedback_val_error: 'Please select the service type and provide ratings for all 4 criteria.',
+            feedback_opening_wa_title: 'Opening WhatsApp...',
+            feedback_opening_wa_desc: 'Your feedback has been prepared for WhatsApp. Please press the Send button in WhatsApp to submit it to our team.'
         },
         ar: {
             top_bar_location: 'أسيوط، مصر',
@@ -445,7 +496,58 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_privacy: 'سياسة الخصوصية',
             footer_terms: 'شروط الخدمة',
             footer_warranty: 'دليل الضمان',
-            wa_tooltip: 'تحدث معنا!'
+            wa_tooltip: 'تحدث معنا!',
+
+            // Section 1: Training Programs
+            training_badge: 'البرامج التدريبية',
+            training_title: 'البرامج التدريبية',
+            training_subtitle: 'برامج تأهيلية وتدريبية متخصصة لتخريج كوادر احترافية في مجال الطاقة الشمسية.',
+            training_card_badge: 'تدريب عملي ونظري',
+            training_prog_title: 'محطات الطاقة الشمسية (من البداية إلى الاحتراف)',
+            training_prog_desc: 'برنامج تدريبي لطلاب الجامعات التكنولوجية والفنيين الراغبين في العمل في مجال تركيب وصيانة محطات الطاقة الشمسية.',
+            training_duration_lbl: 'المدة:',
+            training_duration_val: 'ثلاثة أسابيع.',
+            training_audience_val: 'طلاب الجامعات التكنولوجية والفنيين',
+            training_detail_1: 'يتم التدريب من خلال المحاضرات التي تغطي كل ما هو مطلوب عن أنواع محطات الطاقة الشمسية ومكوناتها، ثم التدريبات العملية التي تتناول الممارسة العملية لجميع خطوات التركيب والتشغيل للأنواع المختلفة من المحطات.',
+            training_detail_2: 'يتم التدريب على أيدي متخصصين بخبرات طويلة ومهارات عالية لضمان وصول المتدرب للمستوى المطلوب لممارسة المهنة بنهاية البرنامج التدريبي.',
+            training_detail_3: 'توفر الشركة كل الأدوات والمعدات المطلوبة لإكمال التدريب مع مراعاة أقصى درجات المهنية والأمن والسلامة وبأسعار تنافسية.',
+            training_wa_btn: 'الاستفسار والتسجيل عبر واتساب',
+            training_wa_msg: 'مرحباً آي سيل سيستمز، أود الاستفسار والتسجيل في البرنامج التدريبي: محطات الطاقة الشمسية (من البداية إلى الاحتراف).',
+
+            // Section 2: Customer Testimonials
+            testimonials_badge: 'آراء عملائنا',
+            testimonials_title: 'آراء عملائنا',
+            testimonials_subtitle: 'تجارب وآراء حقيقية من عملائنا الكرام في القطاعات السكنية والزراعية والصناعية.',
+            testimonials_invite_title: 'نعتز برأي كل عميل',
+            testimonials_invite_desc: 'نحرص دائماً على تطبيق أعلى معايير الجودة والأمان الهندسي. نسعد باستقبال تجاربكم وتقييماتكم الحقيقية لمساعدتنا في التطوير المستمر ومشاركتها مع عملائنا الجدد.',
+            testimonials_invite_btn: 'شاركنا تقييمك الآن',
+
+            // Section 3: Customer Satisfaction / Share Your Feedback
+            feedback_badge: 'استطلاع رضا العملاء',
+            feedback_title: 'شاركنا رأيك',
+            feedback_subtitle: 'رأيكم محل اهتمامنا ويساعدنا دائماً في الارتقاء بمستوى خدماتنا الهندسية والتنفيذية.',
+            feedback_name_lbl: 'اسم العميل (اختياري)',
+            feedback_name_ph: 'أدخل اسمك الكريم أو اتركه فارغاً',
+            feedback_service_lbl: 'نوع الخدمة المقدمة *',
+            feedback_service_opt_default: 'اختر نوع الخدمة',
+            feedback_service_opt_install: 'تركيب محطات الطاقة الشمسية',
+            feedback_service_opt_maint: 'صيانة محطات الطاقة الشمسية',
+            feedback_service_opt_consult: 'استشارات فنية وهندسية',
+            feedback_service_opt_supply: 'توريد مهمات ومعدات',
+            feedback_service_opt_training: 'برنامج تدريبي',
+            feedback_service_opt_other: 'أخرى',
+            feedback_ratings_heading: 'يرجى تقييم المعايير التالية (من 1 إلى 5 نجوم):',
+            feedback_quality_lbl: '1. جودة الخدمة *',
+            feedback_prof_lbl: '2. احترافية الفريق والتواصل *',
+            feedback_punct_lbl: '3. الالتزام بالمواعيد *',
+            feedback_overall_lbl: '4. مستوى الرضا العام عن التجربة *',
+            feedback_comments_lbl: 'ملاحظات ومقترحات إضافية',
+            feedback_comments_ph: 'شاركنا أي ملاحظات أو مقترحات لتطوير خدماتنا...',
+            feedback_submit_btn: 'إرسال التقييم عبر واتساب',
+            feedback_notice_text: 'عند الضغط سيتم فتح محادثة واتساب الرسمية مع رسالة منسقة بتقييمك لتأكيد إرسالها يدوياً.',
+            feedback_val_error: 'يرجى اختيار نوع الخدمة وتحديد التقييم بالنجوم لجميع المعايير الأربعة المطلوبة.',
+            feedback_opening_wa_title: 'جاري فتح تطبيق واتساب...',
+            feedback_opening_wa_desc: 'تم تجهيز رسالة التقييم بنجاح. سيتم توجيهك إلى واتساب، يرجى الضغط على زر الإرسال داخل التطبيق لإرسال التقييم.'
         }
     };
 
@@ -500,6 +602,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     opt.textContent = translations[lang][optKey];
                 }
             });
+        }
+
+        // Translate Feedback Service Select Options
+        const feedbackSelect = document.getElementById('feedbackServiceType');
+        if (feedbackSelect) {
+            Array.from(feedbackSelect.options).forEach(opt => {
+                const optKey = opt.getAttribute('data-i18n');
+                if (optKey && translations[lang] && translations[lang][optKey]) {
+                    opt.textContent = translations[lang][optKey];
+                }
+            });
+        }
+
+        // Update Training WhatsApp Button link with localized message
+        const trainingWaBtn = document.getElementById('trainingWaBtn');
+        if (trainingWaBtn && translations[lang] && translations[lang].training_wa_msg) {
+            const waMsg = translations[lang].training_wa_msg;
+            trainingWaBtn.href = `https://wa.me/201093970825?text=${encodeURIComponent(waMsg)}`;
         }
 
         // Update Lightbox button titles/descriptions if opened
@@ -848,6 +968,258 @@ ${messageInput.value.trim() || 'No additional details provided'}
                 behavior: 'smooth',
                 block: 'nearest'
             });
+        });
+    }
+
+    // --------------------------------------------------------------------------
+    // 10. Customer Feedback Form Interactive Stars & WhatsApp Submission
+    // --------------------------------------------------------------------------
+    const feedbackForm = document.getElementById('customerFeedbackForm');
+    const feedbackFormAlert = document.getElementById('feedbackFormAlert');
+    const submitFeedbackBtn = document.getElementById('submitFeedbackBtn');
+
+    // Interactive Star Rating Logic
+    const starControls = document.querySelectorAll('.star-rating-control');
+
+    starControls.forEach(control => {
+        const fieldId = control.getAttribute('data-rating-field');
+        const hiddenInput = document.getElementById(fieldId);
+        const parentBox = control.closest('.rating-group-box');
+        const badge = parentBox ? parentBox.querySelector('.rating-value-badge') : null;
+        const starBtns = control.querySelectorAll('.star-btn');
+
+        function updateStarDisplay(rating) {
+            starBtns.forEach(btn => {
+                const starVal = parseInt(btn.getAttribute('data-star'), 10);
+                const icon = btn.querySelector('i');
+                if (starVal <= rating) {
+                    btn.classList.add('active');
+                    if (icon) {
+                        icon.classList.remove('fa-regular');
+                        icon.classList.add('fa-solid');
+                    }
+                } else {
+                    btn.classList.remove('active');
+                    if (icon) {
+                        icon.classList.remove('fa-solid');
+                        icon.classList.add('fa-regular');
+                    }
+                }
+            });
+            if (badge) {
+                badge.textContent = rating > 0 ? `${rating}/5 ★` : '0/5';
+                if (rating > 0) {
+                    badge.classList.remove('bg-warning', 'text-dark');
+                    badge.classList.add('bg-success', 'text-white');
+                } else {
+                    badge.classList.remove('bg-success', 'text-white');
+                    badge.classList.add('bg-warning', 'text-dark');
+                }
+            }
+        }
+
+        starBtns.forEach(btn => {
+            const starVal = parseInt(btn.getAttribute('data-star'), 10);
+
+            // Click / Tap Event
+            btn.addEventListener('click', () => {
+                if (hiddenInput) hiddenInput.value = starVal;
+                if (parentBox) parentBox.classList.remove('has-error');
+                updateStarDisplay(starVal);
+            });
+
+            // Hover Preview Events (Desktop)
+            btn.addEventListener('mouseenter', () => {
+                starBtns.forEach(b => {
+                    const bVal = parseInt(b.getAttribute('data-star'), 10);
+                    const icon = b.querySelector('i');
+                    if (bVal <= starVal) {
+                        b.classList.add('hovered');
+                        if (icon) {
+                            icon.classList.remove('fa-regular');
+                            icon.classList.add('fa-solid');
+                        }
+                    } else {
+                        b.classList.remove('hovered');
+                    }
+                });
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                const currentRating = hiddenInput ? (parseInt(hiddenInput.value, 10) || 0) : 0;
+                starBtns.forEach(b => b.classList.remove('hovered'));
+                updateStarDisplay(currentRating);
+            });
+        });
+    });
+
+    // Form Submission & WhatsApp Message Dispatch
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nameInput = document.getElementById('feedbackCustomerName');
+            const serviceSelect = document.getElementById('feedbackServiceType');
+            const qualityInput = document.getElementById('ratingQuality');
+            const profInput = document.getElementById('ratingProf');
+            const punctInput = document.getElementById('ratingPunct');
+            const overallInput = document.getElementById('ratingOverall');
+            const commentsInput = document.getElementById('feedbackComments');
+
+            const qVal = parseInt(qualityInput ? qualityInput.value : 0, 10) || 0;
+            const profVal = parseInt(profInput ? profInput.value : 0, 10) || 0;
+            const punctVal = parseInt(punctInput ? punctInput.value : 0, 10) || 0;
+            const overallVal = parseInt(overallInput ? overallInput.value : 0, 10) || 0;
+
+            let hasError = false;
+
+            // Check service type
+            if (!serviceSelect || !serviceSelect.value) {
+                hasError = true;
+                if (serviceSelect) serviceSelect.focus();
+            }
+
+            // Check star ratings
+            const ratingFields = [
+                { input: qualityInput, box: qualityInput ? qualityInput.closest('.rating-group-box') : null },
+                { input: profInput, box: profInput ? profInput.closest('.rating-group-box') : null },
+                { input: punctInput, box: punctInput ? punctInput.closest('.rating-group-box') : null },
+                { input: overallInput, box: overallInput ? overallInput.closest('.rating-group-box') : null }
+            ];
+
+            ratingFields.forEach(item => {
+                if (!item.input || !item.input.value) {
+                    hasError = true;
+                    if (item.box) item.box.classList.add('has-error');
+                } else {
+                    if (item.box) item.box.classList.remove('has-error');
+                }
+            });
+
+            if (hasError) {
+                if (feedbackFormAlert) {
+                    feedbackFormAlert.className = 'form-feedback-alert alert alert-danger mt-4 d-block';
+                    feedbackFormAlert.innerHTML = `
+                        <i class="fa-solid fa-triangle-exclamation me-2"></i>
+                        ${translations[currentLang].feedback_val_error}
+                    `;
+                    feedbackFormAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+                return;
+            }
+
+            // Temporarily set preparing status
+            if (submitFeedbackBtn) {
+                submitFeedbackBtn.disabled = true;
+                submitFeedbackBtn.innerHTML = `
+                    <i class="fa-solid fa-spinner fa-spin me-2"></i>
+                    <span>${translations[currentLang].feedback_opening_wa_title}</span>
+                `;
+            }
+
+            // Helper to render stars in WhatsApp
+            function getStarString(val) {
+                return '⭐'.repeat(val) + ` (${val}/5)`;
+            }
+
+            const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+            let whatsappMessage = '';
+
+            if (currentLang === 'ar') {
+                const customerName = (nameInput && nameInput.value.trim()) ? nameInput.value.trim() : 'عميل كريم';
+                const comments = (commentsInput && commentsInput.value.trim()) ? commentsInput.value.trim() : 'لا توجد ملاحظات إضافية';
+                whatsappMessage = `
+استطلاع رضا العملاء وتقييم الخدمة - iCell Systems
+
+اسم العميل: ${customerName}
+نوع الخدمة: ${serviceText}
+
+التقييمات بالنجوم (من 5):
+- جودة الخدمة: ${getStarString(qVal)}
+- احترافية الفريق والتواصل: ${getStarString(profVal)}
+- الالتزام بالمواعيد: ${getStarString(punctVal)}
+- مستوى الرضا العام: ${getStarString(overallVal)}
+
+ملاحظات ومقترحات إضافية:
+${comments}
+                `.trim();
+            } else {
+                const customerName = (nameInput && nameInput.value.trim()) ? nameInput.value.trim() : 'Valued Client';
+                const comments = (commentsInput && commentsInput.value.trim()) ? commentsInput.value.trim() : 'No additional comments provided';
+                whatsappMessage = `
+Customer Satisfaction & Feedback - iCell Systems
+
+Customer Name: ${customerName}
+Service Type: ${serviceText}
+
+Ratings (out of 5 Stars):
+- Service Quality: ${getStarString(qVal)}
+- Team Professionalism & Communication: ${getStarString(profVal)}
+- Punctuality: ${getStarString(punctVal)}
+- Overall Satisfaction: ${getStarString(overallVal)}
+
+Additional Comments & Suggestions:
+${comments}
+                `.trim();
+            }
+
+            // Existing Company WhatsApp Number
+            const companyWhatsAppNumber = '201093970825';
+            const whatsappURL = `https://wa.me/${companyWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Open WhatsApp in a new tab/app window
+            window.open(whatsappURL, '_blank');
+
+            // Display success notification explaining WhatsApp opened
+            if (feedbackFormAlert) {
+                feedbackFormAlert.className = 'form-feedback-alert alert alert-success mt-4 d-block';
+                feedbackFormAlert.innerHTML = `
+                    <h6 class="alert-heading fw-bold mb-1">
+                        <i class="fa-solid fa-circle-check me-2"></i>
+                        ${translations[currentLang].feedback_opening_wa_title}
+                    </h6>
+                    <p class="mb-0 small">
+                        ${translations[currentLang].feedback_opening_wa_desc}
+                    </p>
+                `;
+            }
+
+            // Reset form inputs & rating states
+            feedbackForm.reset();
+            starControls.forEach(control => {
+                const fieldId = control.getAttribute('data-rating-field');
+                const hiddenInput = document.getElementById(fieldId);
+                if (hiddenInput) hiddenInput.value = '';
+                const parentBox = control.closest('.rating-group-box');
+                const badge = parentBox ? parentBox.querySelector('.rating-value-badge') : null;
+                if (badge) {
+                    badge.textContent = '0/5';
+                    badge.classList.remove('bg-success', 'text-white');
+                    badge.classList.add('bg-warning', 'text-dark');
+                }
+                const starBtns = control.querySelectorAll('.star-btn');
+                starBtns.forEach(btn => {
+                    btn.classList.remove('active', 'hovered');
+                    const icon = btn.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-solid');
+                        icon.classList.add('fa-regular');
+                    }
+                });
+            });
+
+            // Restore submit button
+            if (submitFeedbackBtn) {
+                submitFeedbackBtn.disabled = false;
+                submitFeedbackBtn.innerHTML = `
+                    <i class="fa-brands fa-whatsapp fs-5 me-2"></i>
+                    <span>${translations[currentLang].feedback_submit_btn}</span>
+                `;
+            }
+
+            if (feedbackFormAlert) {
+                feedbackFormAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
         });
     }
 });
